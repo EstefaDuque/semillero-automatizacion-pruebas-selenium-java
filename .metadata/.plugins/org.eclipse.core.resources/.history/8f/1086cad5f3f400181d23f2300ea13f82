@@ -1,0 +1,19 @@
+
+Feature: Login in LATAM
+  As Alice 
+  I want to use latam.com 
+  to do login
+
+  Scenario Outline: Login successful in Latam
+  
+  	Given that alice opened the homepage of latam
+  	And  	she wanted to login
+  	When 	she enters her information "<user>" and "<password>"
+   	And 	she enters to her account
+   	Then  she will verify that she login correctly 
+  
+   Examples: 
+   
+      | user  						| pasword 				|
+      | faniam4@gmail.com |     123456789Md |
+   

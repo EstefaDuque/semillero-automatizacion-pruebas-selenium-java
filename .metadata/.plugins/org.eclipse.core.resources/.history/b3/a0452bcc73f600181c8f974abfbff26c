@@ -1,0 +1,30 @@
+package com.latam.certification.tasks;
+
+
+import net.serenitybdd.core.steps.Instrumented;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.actions.SelectFromOptions;
+import net.serenitybdd.screenplay.targets.Target;
+
+public class ChooseFlight implements Task{
+	
+	private Target flightList;
+	private int cantidad;
+	public ChooseFlight(Target flightList) {
+		this.flightList=flightList;
+	}
+	@Override
+	public <T extends Actor> void performAs(T actor) {
+		
+		actor.attemptsTo(SelectFlightRandom.D));
+
+		cantidad=flightList.resolveAllFor(actor).size();
+		
+	}
+	public static ChooseFlight of(Target flightList) {
+		return Instrumented.instanceOf(ChooseFlight.class)
+				.withProperties(flightList);
+		
+	}
+}

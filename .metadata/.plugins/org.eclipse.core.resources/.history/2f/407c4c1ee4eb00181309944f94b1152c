@@ -1,0 +1,35 @@
+package co.com.bancolombia.certification.googlesuite.stepdefinitions;
+
+import org.openqa.selenium.WebDriver;
+
+import cucumber.api.PendingException;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import net.thucydides.core.annotations.Managed;
+
+public class GoogleTranslateStepDefinitios {
+	
+	@Managed(driver="chrome")
+	private WebDriver herBrowser;
+	
+	private Actor estefa= new Actor("estefa");
+	
+	@Given("^That Estefa wants to translate a word$")
+	public void that_Estefa_wants_to_translate_a_word() throws Exception {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@When("^She translate the word notebook from English to Spanish$")
+	public void she_translate_the_word_notebook_from_English_to_Spanish() throws Exception {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();s
+	}
+
+	@Then("^She should see la palabra cuaderno in the screen$")
+	public void she_should_see_la_palabra_cuaderno_in_the_screen() throws Exception {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+}

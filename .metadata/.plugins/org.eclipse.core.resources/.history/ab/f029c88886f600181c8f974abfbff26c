@@ -1,0 +1,12 @@
+package com.latam.certification.userinterfaces;
+
+import net.serenitybdd.core.annotations.findby.By;
+import net.serenitybdd.screenplay.targets.Target;
+
+public class SelectFlightComponent {
+	
+	public static final Target FLIGHT_LIST = Target.the("List of flight").located(By.className("flight"));
+	public static final Target CONTINUE_RESERVATION = Target.the("Continue the reservation button").located(By.xpath("//button[@id='submit-flights']"));
+	public static final Target ADULT_NAME = Target.the("Name of the adult passengern").located(By.xpath("//input[@id='name-8e8f6d13-4811-41b9-ac1d-4dfe20327082']"));
+
+}	

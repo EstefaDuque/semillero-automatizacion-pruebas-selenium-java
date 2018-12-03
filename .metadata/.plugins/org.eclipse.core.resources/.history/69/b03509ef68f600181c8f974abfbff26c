@@ -1,0 +1,38 @@
+#Author: faniam4@gmail.com
+
+@selectFlight
+Feature: Select a flight in latam
+	As Alice 
+  I want to use latam.com 
+  to to select a flight
+
+  Background: Successful Login in Latam and To look for flights in Latam
+  
+  	Given that alice wanted to login 
+  	When 	she enters to her account with her information
+  	| user  								| password 	|
+    |faniam4@gmail.com			|123456789Md|
+   	Then  she will verify that she entered correctly 
+    
+    When alice enters the search criteria
+    | origin  	| destination 	|flightTypes |departureDate |adultPassengers |childrenPassengers |babyPassengers|  
+   	|Jose Maria Cordova|Gustavo Rojas Pinilla|Solo ida|15/12/2018|3|2|1|
+   	
+    Then she will verify that she found at least one flight
+
+	 Scenario: Select a random flight in latam
+	 
+    Given that alice wanted to generate a random number
+    When 	she enters the data of the adult passengers, children and babies
+    
+    |adultName 		|adultLastname 	|adultIdType |adultIdNumber |adultOrigineCountry| 
+   	|Maria Isabel|Restrepo Tobon|Pasaporte|10406073|Colombia|
+   	
+   	|childName |childLastname  	|childIdType |childIdNumber |childOrigineCountry |childBirthDateDay |childBirthDateMonth |childBirthDateYear|
+   	|Emilio|Restrepo Perez|Pasaporte|32873490|Colombia|27|enero|2010|
+   	 
+  
+
+    
+    Then 	she will verify your reservation
+	

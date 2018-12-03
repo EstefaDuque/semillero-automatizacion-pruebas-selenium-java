@@ -1,0 +1,76 @@
+package com.demoaut.newtours.certification.test;
+
+//Importación de las Librerías
+
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+//Libreria para el navegador. Se cambia de acuerdo al navegador usado.
+import org.openqa.selenium.chrome.ChromeDriver;
+//----------------------------------------------
+
+public class NewtoursLoginPOM {
+	
+	//Variable Globales.
+	WebDriver Automat;
+	String nameDriverNavegator,driverLocation,browser;
+	
+	//La clase WebElement Representa un elemento HTML.
+	WebElement elemento;
+	
+	//Constructor 
+	public NewtoursLoginPOM(String nameDriverNavegator, String driverLocation, String browser) {
+		
+		//Recibe como parametros el nombre del driver y la localización del jar.
+		System.setProperty(nameDriverNavegator,driverLocation);
+		
+		/*Asignar a las variables globales, los parametros recibidos.
+		El this sirve para hacer referencia a un metodo o propiedad del objeto actual.*/
+
+		this.nameDriverNavegator=nameDriverNavegator;
+		this.driverLocation=driverLocation;
+		this.browser=browser;
+		openSource(); //Abrir el navegador y el buscador.
+		
+	}
+	
+	public void openSource() {
+		
+		//Instanciar el robot, de acuerdo al navegador usado.
+		Automat = new ChromeDriver(); 
+			
+		//Abrir el buscador.
+		Automat.get(browser);
+	}
+
+	//Método para buscar elementos de la pagina.
+	public void searchElement(String element) {
+		
+		elemento=Automat.findElement(By.name(element));
+	}
+	
+	/*Método sendKeys es un método para pasar el contenido o texto a un elemento editable sin reemplazar 
+	el contenido disponible anterior.*/
+	
+	public void writeText() {
+		elemento.sendKeys("http://newtours.demoaut.com/");
+	}
+	
+	//El método click() se utiliza para simular el clic de cualquier elemento
+	public void search() {
+		
+		this.searchElement("btnK");
+		elemento.click();
+		
+	}
+	
+	//Cierra la instancia.
+	public void closeTest() {
+		
+		Automat.close();
+	}
+	
+
+
+}

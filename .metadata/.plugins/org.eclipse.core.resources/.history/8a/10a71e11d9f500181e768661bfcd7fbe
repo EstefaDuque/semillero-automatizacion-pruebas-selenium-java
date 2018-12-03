@@ -1,0 +1,81 @@
+package com.latam.certification.stepdefinitions;
+
+
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.WebDriver;
+
+import com.latam.certification.exceptions.NotSuccesfulLogin;
+import static com.latam.certification.exceptions.NotSuccesfulLogin.getNotSuccesfulLoginMessage;
+import com.latam.certification.models.LoginModel;
+import com.latam.certification.questions.UserNameHeader;
+import com.latam.certification.tasks.EnterDataLogin;
+import com.latam.certification.tasks.GoLogin;
+import com.latam.certification.tasks.OpenTheApplication;
+import com.latam.certification.userinterfaces.LatamHomePage;
+import static org.hamcrest.Matchers.equalTo;
+import cucumber.api.java.Before;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
+import net.thucydides.core.annotations.Managed;
+import static net.serenitybdd.screenplay.GivenWhenThen.*;
+public class LoginStepDefinitions {
+	
+	@Managed(driver = "chrome")// Le indicamos el nombre del navegador que vamos a usar
+	private WebDriver herBrowser;
+	
+	//Creamos el actor,el método named hace lo mismo que un constructor.
+	private Actor alice = Actor.named("Alice");
+	
+	private LatamHomePage latamHomePage;
+	
+	//Método para realizar el enlace entre el autor y el driver.
+	@Before
+	public void setUp() {
+		
+		//BrowseTheWeb es la habilidad que tiene el actor para abrir el naveador.
+		alice.can(BrowseTheWeb.with(herBrowser));
+		
+		/*implicitlyWait se utiliza para establecer el tiempo de espera predeterminado en 
+		todo el programa, evita errores de tipo org.openqa.selenium.NoSuchElementException:
+		no such element.*/
+		herBrowser.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS) ;
+	}
+	
+
+	@Given("^that alice wanted to login$")
+	public void thatAliceWantedToLogin()  {
+		//El metodo wasAbleTo recibe tareas.
+		//OpenTheApplication Abre la pagina que le enviemos
+		//Login selecciona al boton iniciar sesion
+		givenThat(alice).wasAbleTo(OpenTheApplication.on(latamHomePage),
+									GoLogin.theApp()
+				);
+	}
+	
+	@When("^she enters to her account with her information$")
+	public void sheEntersToHerAccountWithHerInformation(List<LoginModel> loginData)  {
+		//attemptsTo intenta
+		/*EnterData ingresa a la cuenta con el usuario y contrasena. Como
+		parametros le enviamos un objeto de tipo LoginModel, la primera personas*/
+		when(alice).attemptsTo(EnterDataLogin.login(loginData.get(0)));
+		
+
+	}
+	
+	@Then("^she will verify that she entered correctly$")
+	public void sheWillVerifyThatSheEnteredCorrectly(){
+		
+		//Should recibe dos parametros(resultadoObtenido,resultadoEsperado), uno es de tipo question y otro de tipo matcher Hamcrest
+		//UserNameHeader trae el nombre del usuario que inicio sesion el cual aparece en la cabecera de la pagina.
+		then(alice).should(seeThat(UserNameHeader.page()).orComplainWith(NotSuccesfulLogin.class,
+				getNotSuccesfulLoginMessage()));
+		
+	}
+
+	
+
+}

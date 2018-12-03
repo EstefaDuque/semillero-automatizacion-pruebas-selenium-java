@@ -1,0 +1,45 @@
+#Author: faniam4@gmail.com
+
+@login
+Feature: Login in LATAM
+  As Alice 
+  I want to use latam.com 
+  to do login
+	
+  @tag1 @successfulLogin @smokeTest
+  Scenario: successful Login in Latam
+  
+  	Given that alice wanted to login 
+  	When 	she enters to her account with her information
+  	| user  								| password 	|
+    |faniam4@gmail.com			|123456789Md|
+   	Then  she will verify that she entered correctly 
+  
+  @tag2 @wrongUser
+  Scenario: successful Login in Latam
+  
+  	Given that alice wanted to login 
+  	When 	she enters to her account with her information
+  	| user  								| password 	|
+    |semillero@gmail.com		|123456789Md|
+   	Then  she will verify that she entered correctly 
+   	
+ @tag3 @wrongPassword
+  Scenario: successful Login in Latam
+  
+  	Given that alice wanted to login 
+  	When 	she enters to her account with her information
+  	| user  								| password 	|
+    |faniam4@gmail.com			|java				|		
+   	Then  she will verify that she entered correctly 
+   	
+  @tag4 @wrongUserAndPassword
+  Scenario: successful Login in Latam
+  
+  	Given that alice wanted to login 
+  	When 	she enters to her account with her information
+  	| user  								| password 	|
+    |semillero@gmail.com		|java				|
+   	Then  she will verify that she entered correctly 
+   
+      

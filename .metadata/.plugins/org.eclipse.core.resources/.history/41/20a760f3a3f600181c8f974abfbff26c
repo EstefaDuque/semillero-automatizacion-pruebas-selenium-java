@@ -1,0 +1,39 @@
+package com.latam.certification.tasks;
+
+import com.latam.certification.exceptions.NotSuccesfulLogin;
+import com.latam.certification.models.BuyData;
+import com.latam.certification.models.LoginModel;
+import com.latam.certification.userinterfaces.LoginComponent;
+
+import net.serenitybdd.core.steps.Instrumented;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.Enter;
+
+public class EnterFlightBuyData implements Task{
+	
+	private BuyData buyData;
+
+	public EnterFlightBuyData(BuyData buyData)  {
+		this.buyData= buyData;
+	}
+	@Override
+	public <T extends Actor> void performAs(T actor) {
+		actor.attemptsTo(
+				Click.on(BuyFlightComponent..SUBMIT)
+				Enter.theValue(this.loginData.getUser()).into(LoginComponent.USER),//Ingresamos la palabra que queremos traducir en el campo de texto indicado
+				Enter.theValue(this.loginData.getPassword()).into(LoginComponent.PASSWORD),
+						Click.on(LoginComponent.SUBMIT)
+				);
+
+		
+	}
+
+	public static EnterFlightBuyData of(BuyData buyData) {
+		return Instrumented.instanceOf(EnterFlightBuyData.class)
+			.withProperties(buyData);
+				
+	}
+	
+}

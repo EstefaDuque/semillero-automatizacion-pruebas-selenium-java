@@ -1,0 +1,42 @@
+package com.latam.certification.tasks;
+
+import com.latam.certification.models.ContactInformation;
+import com.latam.certification.userinterfaces.SelectFlightComponent;
+
+import net.serenitybdd.core.steps.Instrumented;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.actions.SelectFromOptions;
+import net.serenitybdd.screenplay.conditions.Check;
+
+public class EnterDataContactInformation implements Task {
+	private ContactInformation contactInformation;
+
+	public EnterDataContactInformation(ContactInformation contactInformation) {
+		this.contactInformation= contactInformation;
+	}
+	@Override
+	public <T extends Actor> void performAs(T actor) {
+		
+		actor.attemptsTo(
+				Enter.theValue(this.contactInformation.getContactEmail()).into(SelectFlightComponent.CONTACT_EMAIL),
+				Check.whether(this.contactInformation.getContactPhoneType().equals("Movil")).
+		        	andIfSo(Click.on(SelectFlightComponent.CONTACT_PHONE_TYPE_MOVIL)).otherwise(),
+		        Check.whether(this.contactInformation.getContactPhoneType().equals("Fijo")).
+		            andIfSo(Click.on(SelectFlightComponent.CONTACT_PHONE_TYPE_FIJO)).otherwise(),		        
+		        SelectFromOptions.byVisibleText(this.contactInformation.getContactCountry()).from(SelectFlightComponent.CONTACT_COUNTRY),
+				Enter.theValue(this.contactInformation.getContactAreaCode()).into(SelectFlightComponent.CONTACT_AREA_CODE),
+				Enter.theValue(this.contactInformation.getContactPhoneNumber()).into(SelectFlightComponent.CONTACT_PHONE_NUMBER),
+				Click.on(SelectFlightComponent.CONTINUE_RESERVATION)
+		            
+				);
+		
+	}
+	public static EnterDataContactInformation of(ContactInformation contactInformation) {
+		return Instrumented.instanceOf(EnterDataContactInformation.class)
+			.withProperties(contactInformation);
+				
+	}
+}

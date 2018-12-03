@@ -1,0 +1,15 @@
+package com.latam.certification.models;
+
+public class ChildPassenger {
+	
+	private String childName;
+	private String childLastname;
+	private String childIdType;
+	private String childIdNumber;
+	private String childOrigineCountry;
+	private String childBirthDateDay;
+	private String childBirthDateMonth;
+	private String childBirthDateYear;
+
+   
+}

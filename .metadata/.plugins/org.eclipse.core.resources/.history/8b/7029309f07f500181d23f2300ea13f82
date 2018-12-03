@@ -1,0 +1,21 @@
+package com.latam.certification.questions;
+
+import com.gargoylesoftware.htmlunit.javascript.host.dom.Text;
+import com.latam.certification.userinterfaces.LoginComponent;
+
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Question; //paquete le permiten acceder a casi cualquier cosa visible en la página web
+import net.serenitybdd.screenplay.questions.Text;
+
+public class UserNameHeader implements Question<String> {
+
+	@Override
+	public String answeredBy(Actor actor) {
+		return Text.of(LoginComponent.USERNAME).viewedBy(actor).asString();
+	}
+
+	public static Question<String> displayed(){
+		return new UserNameHeader();
+	}
+
+}

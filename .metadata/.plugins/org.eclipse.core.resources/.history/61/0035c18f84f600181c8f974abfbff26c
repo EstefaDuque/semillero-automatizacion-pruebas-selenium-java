@@ -1,0 +1,21 @@
+package com.latam.certification.tasks;
+
+import com.latam.certification.models.AdultPassenger;
+
+import net.serenitybdd.core.steps.Instrumented;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Task;
+
+public class EnterDataAdultPassenger implements Task {
+
+	@Override
+	public <T extends Actor> void performAs(T actor) {
+		// TODO Auto-generated method stub
+		
+	}
+	public static EnterDataAdultPassenger of(AdultPassenger adultData) {
+		return Instrumented.instanceOf(EnterDataAdultPassenger.class)
+			.withProperties(adultData);
+				
+	}
+}

@@ -1,0 +1,33 @@
+package com.latam.certification.interactions;
+
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Interaction;
+import net.serenitybdd.screenplay.Tasks;
+import net.serenitybdd.screenplay.targets.Target;
+
+public class SeleccionarItinerario implements Interaction{
+
+	private int cantpasajeros;
+	private Target botonmas;
+		
+	public SeleccionarItinerario(int cantpasajeros,Target botonmas) {
+		this.cantpasajeros = cantpasajeros;s
+		this.botonmas=botonmas;
+	}
+
+	@Override
+	public <T extends Actor> void performAs(T actor) {
+	
+		for (int i = 1; i <=cantpasajeros; i++) {
+			botonmas.resolveAllFor(actor).get(i).click();
+					
+		}
+		
+	}
+	
+	public static SeleccionarItinerario conVuelo(int cantpasajeros,Target botonmas )
+	{
+		return Tasks.instrumented(SeleccionarItinerario.class,cantpasajeros, botonmas);
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.latam.certification.tasks;
+
+
+import net.serenitybdd.core.steps.Instrumented;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.targets.Target;
+
+public class CountItems implements Task{
+
+	@Override
+	public <T extends Actor> void performAs(T actor) {
+	
+		opciones.resolveAllFor(actor).size()
+	}
+	public static CountItems of(Target FLIGHT_LIST) {
+		return Instrumented.instanceOf(CountItems.class)
+				.withProperties(FLIGHT_LIST);
+		
+	}
+}

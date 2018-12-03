@@ -1,0 +1,12 @@
+package com.latam.certification.models;
+
+public class AdultPassenger {
+	
+	private String adultName;
+	private String adultLastname;
+	private String adultIdType;
+	private String adultIdNumber;
+	private String adultOrigineCountry;
+	
+	
+}

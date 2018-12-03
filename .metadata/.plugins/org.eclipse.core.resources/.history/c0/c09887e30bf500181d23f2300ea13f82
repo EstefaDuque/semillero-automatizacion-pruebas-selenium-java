@@ -1,0 +1,73 @@
+package com.latam.certification.stepdefinitions;
+
+
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.WebDriver;
+
+import com.latam.certification.questions.UserNameHeader;
+import com.latam.certification.tasks.EnterData;
+import com.latam.certification.tasks.Login;
+import com.latam.certification.tasks.OpenTheApplication;
+import com.latam.certification.userinterfaces.LatamHomePage;
+import static org.hamcrest.Matchers.equalTo;
+import cucumber.api.java.Before;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
+import net.thucydides.core.annotations.Managed;
+import static net.serenitybdd.screenplay.GivenWhenThen.*;
+public class LoginStepDefinitions {
+	
+	@Managed(driver = "chrome")// Le indicamos el nombre del navegador que vamos a usar
+	private WebDriver herBrowser;
+	
+	//Creamos el actor,el método named hace lo mismo que un constructor.
+	private Actor alice = Actor.named("Alice");
+	
+	private LatamHomePage latamHomePage;
+	
+	//Método para realizar el enlace entre el autor y el driver.
+	@Before
+	public void setUp() {
+		
+		//BrowseTheWeb es la habilidad que tiene el actor para abrir el naveador.
+		alice.can(BrowseTheWeb.with(herBrowser));
+		
+		/*implicitlyWait se utiliza para establecer el tiempo de espera predeterminado en 
+		todo el programa, evita errores de tipo org.openqa.selenium.NoSuchElementException:
+		no such element.*/
+		herBrowser.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS) ;
+	}
+	
+
+	@Given("^that alice wanted to login$")
+	public void thatAliceWantedToLogin()  {
+		//El metodo wasAbleTo recibe tareas.
+		//OpenTheApplication Abre la pagina que le enviemos
+		//Login selecciona al boton iniciar sesion
+		givenThat(alice).wasAbleTo(OpenTheApplication.on(latamHomePage),
+									Login.theApp()
+				);
+	}
+	
+	@When("^she enters to her account with her information \"([^\"]*)\" \"([^\"]*)\"$")
+	public void sheEntersToHerAccountWithHerInformation(String user, String password)  {
+		//attemptsTo intenta
+		//EnterData ingresa a la cuenta con el usuario y contrasena
+		when(alice).attemptsTo(EnterData.login(user,password));
+		System.out.println(user);
+		System.out.println(password);
+
+	}
+	
+	@Then("^she will verify that she login correctly as \"([^\"]*)\"$")
+	public void sheWillVerifyThatSheLoginCorrectlyAs(String userName){
+		
+		//Should recibe dos parametros, uno es de tipo question y otro de tipo matcher Hamcrest
+		
+		then(alice).should(seeThat(UserNameHeader.displayed(),equalTo(userName)));
+	}
+	
+}

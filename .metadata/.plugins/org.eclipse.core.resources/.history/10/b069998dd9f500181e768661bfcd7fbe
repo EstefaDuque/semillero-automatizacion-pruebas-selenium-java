@@ -1,0 +1,23 @@
+package com.latam.certification.stepdefinitions;
+
+import java.util.List;
+
+import com.latam.certification.models.SearchFlightModel;
+
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class SearchFlightStepDefinitions {
+	
+	@When("^alice enters the search criteria$")
+	public void aliceEntersTheSearchCriteria(List<SearchFlightModel> searchFlightData)  {
+	   
+	    
+	}
+
+	@Then("^she will verify that she found at least one flight$")
+	public void sheWillVerifyThatSheFoundAtLeastOneFlight()  {
+	    // Write code here that turns the phrase above into concrete actions
+	
+	}
+}

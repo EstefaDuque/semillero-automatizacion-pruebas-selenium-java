@@ -1,0 +1,19 @@
+package com.latam.certification.questions;
+
+import groovyjarjarantlr.collections.List;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Question;
+
+public class UserNameHeader implements Question<String> {
+
+	@Override
+	public String answeredBy(Actor actor) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public static Question<String> displayed(){
+		return new UserNameHeader;
+	}
+
+}

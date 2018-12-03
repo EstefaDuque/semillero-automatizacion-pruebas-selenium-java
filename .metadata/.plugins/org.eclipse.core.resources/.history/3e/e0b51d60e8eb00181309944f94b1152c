@@ -1,0 +1,9 @@
+package co.com.bancolombia.certification.googlesuite.userinterfaces;
+
+import net.bytebuddy.implementation.bind.annotation.Default;
+
+//Mapea la url de la página
+@Default("https://www.google.com./")
+public class GoogleHomePage {
+
+}

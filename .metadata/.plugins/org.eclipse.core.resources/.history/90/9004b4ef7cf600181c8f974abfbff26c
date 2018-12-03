@@ -1,0 +1,40 @@
+package com.latam.certification.interactions;
+
+import com.latam.certification.userinterfaces.SelectFlightComponent;
+
+import net.serenitybdd.core.steps.Instrumented;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Interaction;
+import net.serenitybdd.screenplay.Tasks;
+import net.serenitybdd.screenplay.targets.Target;
+
+public class SelectFlightRandom implements Interaction{
+
+	private Target flightList, flight;
+	private int numberFlights,sizeList, flightNumber;
+
+	
+	public SelectFlightRandom(Target flightList) {
+		this.flightList=flightList;
+		this.flight=SelectFlightComponent.CHOOSE_FLIGHT;
+	}
+	
+	@Override
+	public <T extends Actor> void performAs(T actor) {
+		
+		sizeList=flightList.resolveAllFor(actor).size();
+		flightNumber = (int) (Math.random() * sizeList) + 1;
+		
+		opciones.resolveAllFor(actor).get(flightNumber).click();
+
+		SelectFlightComponent.CHOOSE_FLIGHT.resolveAllFor(actor).toString().replaceAll("li[1]", "li["+flightNumber+"]");
+		
+	}
+	public static SelectFlightRandom of(Target flightList)
+	{
+		return Instrumented.instanceOf(SelectFlightRandom.class)
+				.withProperties(flightList);
+
+	}
+
+}

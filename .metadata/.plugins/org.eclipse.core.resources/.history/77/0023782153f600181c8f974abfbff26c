@@ -1,0 +1,62 @@
+package com.latam.certification.tasks;
+
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.remote.server.handler.ClearElement;
+
+import com.latam.certification.models.LoginModel;
+import com.latam.certification.models.SearchFlightModel;
+import com.latam.certification.userinterfaces.SearchFlightComponent;
+
+import net.serenitybdd.core.steps.Instrumented;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.conditions.Check;
+import com.latam.certification.interactions.SeleccionarItinerario;
+
+public class EnterDataSearch implements Task {
+	
+	private SearchFlightModel searchFlightData;
+
+	
+	public EnterDataSearch(SearchFlightModel searchFlightData) {
+		this.searchFlightData= searchFlightData;
+	}
+	
+	@Override
+	public <T extends Actor> void performAs(T actor) {
+		
+		actor.attemptsTo(Enter.theValue(this.searchFlightData.getOrigin()).into(SearchFlightComponent.ORIGIN_FLIGHT),
+						Click.on(SearchFlightComponent.FIRST_OPTION_ORIGIN),
+						Enter.theValue(this.searchFlightData.getDestination()).into(SearchFlightComponent.DESTINATION_FLIGHT),
+						Click.on(SearchFlightComponent.FIRST_OPTION_DESTINATION),
+						Check.whether(searchFlightData.getFlightTypes().equals("Solo ida")).
+			               andIfSo(Click.on(SearchFlightComponent.FLIGHT_TYPE_ONE_WAY)),
+						Check.whether(searchFlightData.getFlightTypes().equals("Ida y Vuelta")).
+				               andIfSo(Click.on(SearchFlightComponent.FLIGHT_TYPE_ROUND_TRIP)));
+						/*
+				        Click.on(SearchFlightComponent.DEPARTURE_DATE),
+						Enter.theValue(searchFlightData.getDepartureDate()).into(SearchFlightComponent.DEPARTURE_DATE),
+						*/
+				        if(searchFlightData.getAdultPassengers()>1) {
+							actor.attemptsTo(Click.on(SearchFlightComponent.PASSENGER_COUNT));
+						
+							for(int i=1;i<searchFlightData.getAdultPassengers();i++) {
+								actor.attemptsTo(Click.on(SearchFlightComponent.BOTON_MAS));
+							}
+							
+				        }
+						/*Click.on(SearchFlightComponent.SUBMIT_SEARCH_FLIGH)*/
+				
+				
+		
+	}
+	
+	public static EnterDataSearch flight(SearchFlightModel searchFlightData) {
+		return Instrumented.instanceOf(EnterDataSearch.class)
+				.withProperties(searchFlightData);
+		
+	}
+
+}

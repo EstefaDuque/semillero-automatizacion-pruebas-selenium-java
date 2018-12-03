@@ -1,0 +1,63 @@
+package com.latam.certification.stepdefinitions;
+
+
+import static net.serenitybdd.screenplay.GivenWhenThen.*;
+
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+
+import org.openqa.selenium.WebDriver;
+
+import com.latam.certification.exceptions.CanNotReservationCodeFlight;
+import static com.latam.certification.exceptions.CanNotReservationCodeFlight.getCanNotReservationCodeFlight;
+import com.latam.certification.models.BuyData;
+
+
+import  com.latam.certification.questions.ProcessingRequestBox;
+import com.latam.certification.tasks.EnterFlightBuyData;
+
+import cucumber.api.java.Before;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
+import net.thucydides.core.annotations.Managed;
+
+public class BuyFlightStepDefinitions {
+
+	@Managed(driver = "chrome")// Le indicamos el nombre del navegador que vamos a usar
+	private WebDriver herBrowser;
+	
+	//Creamos el actor,el método named hace lo mismo que un constructor.
+	private Actor alice = Actor.named("Alice");
+	
+	//Método para realizar el enlace entre el autor y el driver.
+	@Before
+	public void setUp() {
+		
+		//BrowseTheWeb es la habilidad que tiene el actor para abrir el naveador.
+		alice.can(BrowseTheWeb.with(herBrowser));
+		
+		/*implicitlyWait se utiliza para establecer el tiempo de espera predeterminado en 
+		todo el programa, evita errores de tipo org.openqa.selenium.NoSuchElementException:
+		no such element.*/
+		herBrowser.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS) ;
+	}
+	
+	@When("^she selects the payment method$")
+	public void sheSelectsThePaymentMethod(List<BuyData> buyData)  {
+		when(alice).attemptsTo(EnterFlightBuyData.of(buyData.get(0)));
+
+	}
+	
+	@Then("^she will verify your reservation code$")
+	public void sheWillVerifyYourReservationCode()  {
+		
+		then(alice).should(seeThat(ProcessingRequestBox.flight()).orComplainWith(CanNotReservationCodeFlight.class,
+				getCanNotReservationCodeFlight()));
+
+		
+}
+
+}

@@ -1,0 +1,15 @@
+package com.latam.certification.userinterfaces;
+
+import net.serenitybdd.core.annotations.findby.By;
+import net.serenitybdd.screenplay.targets.Target;
+
+public class SelectFlightComponent {
+	
+	public static final Target FLIGHT_LIST = Target.the("List of flight").located(By.className("flight"));
+	public static final Target CHOOSE_FLIGHT = Target.the("List of flight").located(By.xpath("//div//div//div//section[@class='container flight-list']//ul//li[1]"));
+c
+
+	//section[@class='container flight-list']//ul
+	//div//div//div//section[@class='container flight-list']//ul//li[1]
+	//section[@class='container flight-list']//ul
+}

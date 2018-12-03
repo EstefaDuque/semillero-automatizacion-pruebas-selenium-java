@@ -1,0 +1,13 @@
+package co.com.bancolombia.certification.googlesuite.runners;
+
+import org.junit.runner.RunWith;
+import cucumber.api.CucumberOptions;
+
+@RunWith(CucumberWithSerenity.class)
+@CucumberOptions(
+		features = "src/test/resources/features/google_translate.Feature",
+		glue =	"co.com.bancolombia.certification.googlesuite.stepdefinitions"
+)
+public class GoogleTranslateRunner {
+
+}

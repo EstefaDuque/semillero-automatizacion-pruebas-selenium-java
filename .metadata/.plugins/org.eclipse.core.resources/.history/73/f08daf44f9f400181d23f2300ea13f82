@@ -1,0 +1,26 @@
+package com.latam.certification.tasks;
+
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.actions.Click;
+
+//Se usa static para no tener que nombrar la clase solo el metodo estatico instrumented
+import static net.serenitybdd.screenplay.Tasks.instrumented;
+
+import com.latam.certification.userinterfaces.LoginComponent;
+
+public class Login implements Task {
+
+	@Override
+	public <T extends Actor> void performAs(T actor) {
+		//El metodo attemptsTo recibe acciones.
+		actor.attemptsTo(Click.on(LoginComponent.CLOSE_POPOVER),//Cerrar ventan emergente
+						Click.on(LoginComponent.LATAM_LOGIN));// Dar click en el boton iniciar sesion
+
+		
+	}
+	public static Login theApp() {
+		return instrumented(Login.class);
+
+}
+}

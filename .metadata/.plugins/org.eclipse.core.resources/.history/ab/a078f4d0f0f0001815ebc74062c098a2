@@ -1,0 +1,18 @@
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+
+//Prueba 2.
+public class TestJunit2 {
+
+   String message = "Estefania";	
+   MessageUtil messageUtil = new MessageUtil(message);
+ 
+   @Test
+   public void testSalutationMessage() {
+	   
+      System.out.println("Inside testSalutationMessage()");
+      message = "Hi!" + "Estefania";
+      //asserEquals es para validar si los mensajes son iguales.
+      assertEquals(message,messageUtil.salutationMessage());
+   }
+}

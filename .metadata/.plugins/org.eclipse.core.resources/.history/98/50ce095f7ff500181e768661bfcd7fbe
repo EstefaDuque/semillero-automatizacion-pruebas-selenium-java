@@ -1,0 +1,17 @@
+
+Feature: Login in LATAM
+  As Alice 
+  I want to use latam.com 
+  to do login
+
+  Scenario Outline: Login successful in Latam
+  
+  	Given that alice wanted to login 
+  	When 	she enters to her account with her information "<user>" "<password>"
+   	Then  she will verify that she login correctly as "<userName>" 
+  
+   Examples: 
+   
+      | user  					| password 	|userName|
+      |faniam4@gmail.com|123456789Md|Hola Estefania Montoya Duque|
+   

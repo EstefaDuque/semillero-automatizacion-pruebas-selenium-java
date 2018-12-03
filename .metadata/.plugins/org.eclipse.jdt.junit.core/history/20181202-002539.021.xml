@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="SearchFlightRunner" project="LATAM_Screenplay" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="com.latam.certification.runners.SearchFlightRunner" time="29.988">
+    <testsuite name="Feature: To look for a flight in LATAM" time="29.988">
+      <testcase name="To look for flights in Latam" classname="To look for a flight in LATAM" time="29.988">
+        <failure>java.lang.AssertionError: wrong credentials - Expected net.serenitybdd.screenplay.QuestionSubject@22865072
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;&#13;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)&#13;
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)&#13;
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:187)&#13;
+	at com.latam.certification.stepdefinitions.LoginStepDefinitions.sheWillVerifyThatSheEnteredCorrectly(LoginStepDefinitions.java:74)&#13;
+	at ✽.she will verify that she entered correctly(src/test/resources/features/search_flight.feature:15)&#13;
+&#13;
+</failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

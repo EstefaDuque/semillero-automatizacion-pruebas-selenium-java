@@ -1,0 +1,17 @@
+package com.latam.certification.userinterfaces;
+
+import net.serenitybdd.core.annotations.findby.By;
+import net.serenitybdd.screenplay.targets.Target;
+
+public class SearchFlightComponent {
+
+	/*La clase Target es una forma conveniente de asociar un texto legible por el usuario ("what_needs_to_be_done") con una
+	estrategia de ubicación WebDriver.*/
+	public static final Target ORIGIN_FLIGHT = Target.the("Origin of the flight").located(By.id("compra-select-origin"));
+	public static final Target DESTINATION_FLIGHT = Target.the("Destination of the flight").located(By.id("compra-select-destination"));
+	public static final Target FLIGHT_TYPE_ONE_WAY = Target.the("Type of flight one way").located(By.xpath("//div[contains(@class,'check-btn col-sm-3 active')]//label[contains(@data-value,'showDepartureOnly')]"));
+	public static final Target FLIGHT_TYPE_ROUND_TRIP = Target.the("Type of flight round trip").located(By.xpath("//div[contains(@class,'compra__flight-date-region')]//label[contains(@data-value,'showDepartureAndReturn')]"));
+	public static final Target DEPARTURE_DATE = Target.the("Departure date of the flight").located(By.id("dp1543703732956"));
+	public static final Target PASSENGER_COUNT = Target.the("Number of passengers").located(By.id("compra-passenger-count-id"));
+
+}

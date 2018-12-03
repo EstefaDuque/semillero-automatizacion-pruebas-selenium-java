@@ -1,0 +1,13 @@
+#Author: faniam4@gmail.com
+
+@tag
+Feature: Google Translate
+  As a web user #Quien
+  I want use Google Translate #Que quiere hacer
+  To translate words between differents lenguajes #Para que
+
+  @tag1
+  Scenario: Title of your scenario
+    Given I want to write a step with precondition
+    When I complete action
+    Then I validate the outcomes

@@ -1,0 +1,14 @@
+#Author: faniam4@gmail.com
+
+@searchFlight
+Feature: To look for a flight in LATAM
+	As Alice 
+  I want to use latam.com 
+  to do to look for a flight
+
+  @tag1
+  Scenario: To look for flights in Latam
+   
+    When alice enters the search criteria
+    Then she will verify that she found at least one flight
+

@@ -1,0 +1,16 @@
+package com.latam.certification.userinterfaces;
+
+import net.serenitybdd.core.annotations.findby.By;
+import net.serenitybdd.screenplay.targets.Target;
+
+public class SelectFlightComponent {
+	
+	public static final Target FLIGHT_LIST = Target.the("List of flight").located(By.className("flight"));
+	public static final Target CONTINUE_RESERVATION = Target.the("Continue the reservation button").located(By.xpath("//button[@id='submit-flights']"));
+	public static final Target ADULT_NAME = Target.the("Name of the adult passenger").located(By.xpath("//input[@id='name-8e8f6d13-4811-41b9-ac1d-4dfe20327082']"));
+	public static final Target ADULT_LASTNAME = Target.the("Lastname of the adult passenger").located(By.xpath("//input[@id='surname-501a9dd4-ecb8-48f0-861e-01b97266ebe4']"));
+	public static final Target ADULT_ID_TYPE_PASSPORT = Target.the("ID Type passport").located(By.xpath("//input[@id='document-passport-eafd6ecb-e064-4fcb-9a13-cb6c4af5611a']"));
+	public static final Target ADULT_ID_TYPE_CC = Target.the("ID Type cc").located(By.xpath("//input[@id='document-id-4ea21834-7bf6-45c3-982a-9782d997fb9f']"));
+	public static final Target ADULT_ID_NUMBER = Target.the("ID Type cc").located(By.xpath("//input[@id='document-id-4ea21834-7bf6-45c3-982a-9782d997fb9f']"));
+
+}	

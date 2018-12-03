@@ -1,0 +1,19 @@
+package com.instagram.certification.test;
+
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class TestBuscarElemento {
+
+	public TestBuscarElemento() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	//Busca un boton por medio de su xpath.
+	public static WebElement buscarBoton(WebDriver merison) {
+		return merison.findElement(By.xpath("//a[@class='js-nav EdgeButton EdgeButton--medium EdgeButton--secondary StaticLoggedOutHomePage-buttonLogin']"));
+	}
+	
+}

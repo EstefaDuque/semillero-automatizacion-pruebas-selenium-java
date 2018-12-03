@@ -1,0 +1,5 @@
+package com.latam.certification.exceptions;
+
+public class NotSuccesfulLogin implements AssertionError{
+
+}

@@ -1,0 +1,47 @@
+package com.instagram.certification.test;
+
+//Importación de librerias.
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebElement;
+//-------------------------
+
+public class TestTwitterButtonLogin {
+
+	private static WebDriver merison;
+	private WebElement campo;
+
+	@Before
+	public void setUp(){
+		
+		System.setProperty("webdriver.chrome.driver", 
+							"C:\\Selenium\\chromedriver_win32\\chromedriver.exe"); 	
+		merison = new ChromeDriver();
+		merison.get("https://www.instagram.com/?hl=es-la");
+	}
+	
+	@Test
+	
+	public void test() {
+		
+		//Busca el campo de texto
+		campo = TestBuscarElemento.buscarBoton(merison);
+
+		//Valido si encontro o no el boton, depende del resultado muestra un mensaje.
+		TestValidacionElemento.validarEncuentroBoton(campo);
+	 
+	}
+	
+	@After
+	public void tearDown(){
+		/*Cerrar ventana. Con el método quit cierra todas las ventanas correspondientes,
+		incluyendo las emergentes.
+		En cambio el método close solo se cierra la ventana padre*/ 
+		merison.quit();
+	}
+
+	
+}

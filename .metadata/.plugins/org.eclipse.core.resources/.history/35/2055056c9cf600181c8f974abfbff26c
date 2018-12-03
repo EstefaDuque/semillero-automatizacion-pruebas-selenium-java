@@ -1,0 +1,97 @@
+package com.latam.certification.stepdefinitions;
+
+import static com.latam.certification.exceptions.CanNotFindFlights.getCanNotFindFlightsMessage;
+import static net.serenitybdd.screenplay.GivenWhenThen.givenThat;
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
+import static net.serenitybdd.screenplay.GivenWhenThen.then;
+import static net.serenitybdd.screenplay.GivenWhenThen.when;
+
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+
+import com.latam.certification.exceptions.CanNotFindFlights;
+import com.latam.certification.exceptions.CanNotFindFlightsDetails;
+import static com.latam.certification.exceptions.CanNotFindFlightsDetails.getCanNotFindFlightsDetailsMessage;
+import com.latam.certification.models.AdultPassenger;
+import com.latam.certification.models.BabyPassenger;
+import com.latam.certification.models.ChildPassenger;
+import com.latam.certification.models.ContactInformation;
+import com.latam.certification.questions.FlightDetails;
+import com.latam.certification.questions.FlightList;
+import com.latam.certification.tasks.ChooseFlight;
+import com.latam.certification.tasks.EnterDataAdultPassenger;
+import com.latam.certification.tasks.EnterDataBabyPassenger;
+import com.latam.certification.tasks.EnterDataChildPassenger;
+import com.latam.certification.tasks.EnterDataContactInformation;
+import com.latam.certification.userinterfaces.SelectFlightComponent;
+
+import cucumber.api.java.Before;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
+import net.thucydides.core.annotations.Managed;
+
+public class SelectFlightStepDefinitions {
+	
+	@Managed(driver = "chrome")// Le indicamos el nombre del navegador que vamos a usar
+	private WebDriver herBrowser;
+	
+	//Creamos el actor,el método named hace lo mismo que un constructor.
+	private Actor alice = Actor.named("Alice");
+	
+	//Método para realizar el enlace entre el autor y el driver.
+	@Before
+	public void setUp() {
+		
+		//BrowseTheWeb es la habilidad que tiene el actor para abrir el naveador.
+		alice.can(BrowseTheWeb.with(herBrowser));
+		
+		/*implicitlyWait se utiliza para establecer el tiempo de espera predeterminado en 
+		todo el programa, evita errores de tipo org.openqa.selenium.NoSuchElementException:
+		no such element.*/
+		herBrowser.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS) ;
+	}
+	
+	@Given("^she wanted to select a flight randomly$")
+	public void she_wanted_to_select_a_flight_randomly()  {
+		givenThat(alice).wasAbleTo(ChooseFlight.of(SelectFlightComponent.FLIGHT_LIST));
+	}
+
+	@When("^she enters the data of the adult passengers$")
+	public void sheEntersTheDataOfTheAdultPassengers(List<AdultPassenger> adultData) {
+		when(alice).attemptsTo(EnterDataAdultPassenger.of(adultData.get(0)));
+
+	 
+	}
+
+	@When("^she enters the data of the children passengers$")
+	public void sheEntersTheDataOfTheChildrenPassengers(List<ChildPassenger> childData) {
+		when(alice).attemptsTo(EnterDataChildPassenger.of(childData.get(0)));
+
+	}
+
+	@When("^she enters the data of the babies passengers$")
+	public void sheEntersTheDataOfTheBabiesPassengers(List<BabyPassenger> babyData)  {
+		when(alice).attemptsTo(EnterDataBabyPassenger.of(babyData.get(0)));
+   
+	}
+
+	@When("^she enters contact information$")
+	public void sheEntersContactInformation(List<ContactInformation> contactInformation)  {
+		when(alice).attemptsTo(EnterDataContactInformation.of(contactInformation.get(0)));
+
+	    
+	}
+
+	@Then("^she will verify your reservation$")
+	public void sheWillVerifyYourReservation()  {
+		then(alice).should(seeThat(FlightDetails.container()).orComplainWith(CanNotFindFlightsDetails.class,
+				getCanNotFindFlightsDetailsMessage()))s;
+	}
+
+
+}

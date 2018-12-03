@@ -1,0 +1,13 @@
+#Author: faniam4@gmail.com
+
+Feature: Buy a movie in casadellibro.com
+  
+  As a web user 
+  I want to use casadellibro.com 
+  to buy a movie
+
+    Scenario: Buy the movie DEADPOOL two
+    
+    Given that freyns wants add the movie to the shopping cart 
+    When 	he_start_the_purchase 
+    Then 	he verifies that the purchase is in the order summary 

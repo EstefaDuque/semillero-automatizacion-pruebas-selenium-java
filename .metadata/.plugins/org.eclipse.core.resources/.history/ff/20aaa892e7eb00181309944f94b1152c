@@ -1,0 +1,24 @@
+package co.com.bancolombia.certification.googlesuite.tasks;
+
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Performable;
+//Librería para implementar task
+import net.serenitybdd.screenplay.Task;
+
+public class OpenTheBrowser implements Task{
+	
+	/*En el interior de este modo hay que poner todas las interacciones que hay que
+	realizar para cumplir dicha tarea.*/
+	
+	@Override
+	public <T extends Actor> void performAs(T actor) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static Performable on() {
+		//Retorna la instancia de la clase
+		return Task.instrumented(OpenTheBrowser.class));
+	}
+	
+}

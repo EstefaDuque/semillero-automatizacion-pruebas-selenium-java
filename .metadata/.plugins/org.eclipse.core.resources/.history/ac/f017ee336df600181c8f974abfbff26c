@@ -1,0 +1,64 @@
+package com.latam.certification.stepdefinitions;
+
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
+import static net.serenitybdd.screenplay.GivenWhenThen.then;
+import static net.serenitybdd.screenplay.GivenWhenThen.when;
+
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+
+import com.latam.certification.exceptions.CanNotFindFlights;
+import static com.latam.certification.exceptions.CanNotFindFlights.getCanNotFindFlightsMessage;
+
+import com.latam.certification.models.SearchFlightModel;
+import com.latam.certification.questions.FlightList;
+
+import com.latam.certification.tasks.EnterDataSearch;
+import com.latam.certification.userinterfaces.LatamHomePage;
+
+import cucumber.api.java.Before;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
+import net.thucydides.core.annotations.Managed;
+
+public class SearchFlightStepDefinitions {
+	
+	@Managed(driver = "chrome")// Le indicamos el nombre del navegador que vamos a usar
+	private WebDriver herBrowser;
+	
+	//Creamos el actor,el método named hace lo mismo que un constructor.
+	private Actor alice = Actor.named("Alice");
+	
+	//Método para realizar el enlace entre el autor y el driver.
+	@Before
+	public void setUp() {
+		
+		//BrowseTheWeb es la habilidad que tiene el actor para abrir el naveador.
+		alice.can(BrowseTheWeb.with(herBrowser));
+		
+		/*implicitlyWait se utiliza para establecer el tiempo de espera predeterminado en 
+		todo el programa, evita errores de tipo org.openqa.selenium.NoSuchElementException:
+		no such element.*/
+		herBrowser.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS) ;
+	}
+	
+	
+	@When("^alice enters the search criteria$")
+	public void aliceEntersTheSearchCriteria(List<SearchFlightModel> searchFlightData)  {
+		
+		when(alice).attemptsTo(EnterDataSearch.flight(searchFlightData.get(0)));
+				    
+	}
+
+	@Then("^she will verify that she found at least one flight$")
+	public void sheWillVerifyThatSheFoundAtLeastOneFlight()  {
+		//Should recibe dos parametros(resultadoObtenido,resultadoEsperado), uno es de tipo question y otro de tipo matcher Hamcrest
+				//UserNameHeader trae el nombre del usuario que inicio sesion el cual aparece en la cabecera de la pagina.
+				then(alice).should(seeThat(FlightList.container()).orComplainWith(CanNotFindFlights.class,
+						getCanNotFindFlightsMessage()));
+	}
+}

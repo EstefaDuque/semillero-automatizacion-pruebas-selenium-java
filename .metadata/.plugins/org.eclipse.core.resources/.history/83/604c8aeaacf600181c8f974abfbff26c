@@ -1,0 +1,28 @@
+package com.latam.certification.questions;
+
+import static net.serenitybdd.screenplay.questions.WebElementQuestion.the;
+
+import com.latam.certification.userinterfaces.BuyFlightComponent;
+
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Question;
+
+public class ReservationCode implements Question<Boolean> {
+
+
+	
+	@Override
+	public Boolean answeredBy(Actor actor) {
+		//Retorna el nombre del usuario que se encuentra en la cabecera de la página
+		//return The(LoginComponent.USERNAME).viewedBy(actor).
+	
+				return the(BuyFlightComponent.RESERVATION_CODE).answeredBy(actor).isVisible();
+}
+
+	public static ReservationCode flight(){
+		
+		return new ReservationCode();
+			
+	}
+
+}

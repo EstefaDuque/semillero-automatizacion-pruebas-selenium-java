@@ -1,0 +1,13 @@
+package com.latam.certification.userinterfaces;
+
+import net.serenitybdd.core.annotations.findby.By;
+import net.serenitybdd.screenplay.targets.Target;
+
+public class SearchFlightComponent {
+
+	/*La clase Target es una forma conveniente de asociar un texto legible por el usuario ("what_needs_to_be_done") con una
+	estrategia de ubicación WebDriver.*/
+	public static final Target ORIGIN_FLIGHT = Target.the("Origin of the flight").located(By.id("compra-select-origin"));
+	public static final Target DESTINATION_FLIGHT = Target.the("Destination of the flight").located(By.id("compra-select-destination"));
+
+}

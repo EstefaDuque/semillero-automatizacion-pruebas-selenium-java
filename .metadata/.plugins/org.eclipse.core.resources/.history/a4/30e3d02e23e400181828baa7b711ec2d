@@ -1,0 +1,21 @@
+import static org.junit.Assert.*;
+
+
+import org.junit.Test;
+
+public class Caso2 {
+	
+	String mensaje = "Estefanía";	
+	MensajeUtil objMensaje = new MensajeUtil(mensaje);
+	 
+	@Test
+	public void testSalutationMessage() {
+		
+		System.out.println("Inside testSalutationMessage()");
+	    mensaje = "Hola!" + "Estefanía";
+	    assertEquals(mensaje,objMensaje.agregarPalabra());
+	   }
+
+
+}
+

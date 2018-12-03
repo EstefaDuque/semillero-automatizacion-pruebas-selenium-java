@@ -1,0 +1,57 @@
+package com.latam.certification.models;
+
+public class SearchFlightModel {
+	
+	private String origin;
+	private String destination;
+	private String flightTypes;
+	private String departureDate;
+	private int adultPassengers;
+	private String childrenPassengers;
+	private String babyPassengers;
+	
+	public String getOrigin() {
+		return origin;
+	}
+	public void setOrigin(String origin) {
+		this.origin = origin;
+	}
+	public String getDestination() {
+		return destination;
+	}
+	public void setDestination(String destination) {
+		this.destination = destination;
+	}
+	public String getFlightTypes() {
+		return flightTypes;
+	}
+	public void setFlightTypes(String flighTypes) {
+		this.flightTypes = flighTypes;
+	}
+	public String getDepartureDate() {
+		return departureDate;
+	}
+	public void setDepartureDate(String departureDate) {
+		this.departureDate = departureDate;
+	}
+	public int getAdultPassengers() {
+		return adultPassengers;
+	}
+	public void setAdultPassengers(int adultPassengers) {
+		this.adultPassengers = adultPassengers;
+	}
+	public String getChildrenPassengers() {
+		return childrenPassengers;
+	}
+	public void setChildrenPassengers(String childrenPassengers) {
+		this.childrenPassengers = childrenPassengers;
+	}
+	public String getBabyPassengers() {
+		return babyPassengers;
+	}
+	public void setBabyPassengers(String babyPassengers) {
+		this.babyPassengers = babyPassengers;
+	}
+
+
+}

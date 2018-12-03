@@ -1,0 +1,13 @@
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+
+@RunWith(Suite.class)
+/* JUnit invocará la clase a la que hace referencia
+para ejecutar las pruebas en esa clase en lugar del corredor integrado en JUnit*/
+@Suite.SuiteClasses({
+   Caso1.class,
+   Caso2.class
+})
+
+public class JunitTestSuite {   
+}  

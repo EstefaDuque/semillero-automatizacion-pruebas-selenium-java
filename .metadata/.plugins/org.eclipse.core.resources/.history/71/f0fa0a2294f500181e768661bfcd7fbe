@@ -1,0 +1,42 @@
+package com.latam.certification.tasks;
+
+import com.latam.certification.userinterfaces.LoginComponent;
+
+import net.serenitybdd.core.steps.Instrumented;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.Enter;
+
+
+import com.latam.certification.models.LoginModel;
+
+public class EnterData implements Task {
+	
+	private LoginModel loginData;
+
+	public EnterData(LoginModel loginData) {
+		this.loginData= loginData;
+	}
+	@Override
+	public <T extends Actor> void performAs(T actor) {
+		actor.attemptsTo(Enter.theValue(this.loginData.getUser()).into(LoginComponent.USER),//Ingresamos la palabra que queremos traducir en el campo de texto indicado
+						Enter.theValue(this.loginData.getPassword()).into(LoginComponent.PASSWORD),
+						Click.on(LoginComponent.SUBMIT)
+				);
+
+		
+	}
+
+	public static EnterData login(LoginModel loginData) {
+		return Instrumented.instanceOf(EnterData.class)
+			.withProperties(loginData);
+				
+	}
+	
+	//Metodo que retorna el mensaje de error, cuando el login no fue exitoso
+	public String getNotSuccesfulLoginMessage() {
+		return String.format(UnableToLogin.getUnableToLoginMessage());
+	}
+
+}

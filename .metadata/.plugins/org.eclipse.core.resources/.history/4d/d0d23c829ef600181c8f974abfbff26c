@@ -1,0 +1,43 @@
+#Author: faniam4@gmail.com
+
+@buyFlight
+Feature: Buy a flight in latam
+	As Alice 
+  I want to use latam.com 
+  to buy a flight
+
+
+  Background: Successful Login in Latam to look for flights in Latam and select and random flight in latam
+  
+  	Given that alice wanted to login 
+  	When 	she enters to her account with her information
+  	| user  								| password 	|
+    |faniam4@gmail.com			|123456789Md|
+   	Then  she will verify that she entered correctly 
+    
+    When alice enters the search criteria
+    | origin  	| destination 	|flightTypes |departureDate |adultPassengers |childrenPassengers |babyPassengers|  
+   	|Jose Maria Cordova|Gustavo Rojas Pinilla|Solo ida|15/12/2018|1|1|1|
+   	Then she will verify that she found at least one flight
+		 
+    Given she wanted to select a flight randomly
+    When she enters the data of the adult passengers
+    |adultName 		|adultLastname 	|adultIdType |adultIdNumber |adultOrigineCountry| 
+   	|Maria Isabel|Restrepo Tobon|Pasaporte|10406073|Colombia|
+   	
+   	And she enters the data of the children passengers
+   	|childName |childLastname  	|childIdType |childIdNumber |childOrigineCountry |childBirthDateDay |childBirthDateMonth |childBirthDateYear|
+   	|Emilio|Restrepo Perez|Pasaporte|32873490|Colombia|27|enero|2010|
+   	
+   	And 	she enters the data of the babies passengers
+   	|babyName |babyLastname 	|babyIdType |babyIdNumber |babyOrigineCountry |babyBirthDateDay |babyBirthDateMonth |babyBirthDateYear|
+   	|Valeria|Restrepo Perez|Pasaporte|2387294|Colombia|03|febrero|2017|
+   	
+   	And 	she enters contact information
+   	|contactEmail				|contactPhoneType|contactCountry|contactAreaCode|contactPhoneNumber|
+   	|maria32@gmail.com|Movil|Colombia +57|57|3174545043|	
+    Then 	she will verify your reservation
+    
+  Scenario: 
+    
+    

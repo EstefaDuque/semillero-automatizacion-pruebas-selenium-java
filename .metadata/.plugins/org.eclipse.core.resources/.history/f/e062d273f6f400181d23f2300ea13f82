@@ -1,0 +1,19 @@
+package com.latam.certification.tasks;
+
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Task;
+//Se usa static para no tener que nombrar la clase solo el metodo estatico instrumented
+import static net.serenitybdd.screenplay.Tasks.instrumented;
+
+public class LoginTheApplication implements Task {
+
+	@Override
+	public <T extends Actor> void performAs(T actor) {
+		// TODO Auto-generated method stub
+		
+	}
+	public static LoginTheApplication () {
+		return instrumented(LoginTheApplication.class);
+
+}
+}

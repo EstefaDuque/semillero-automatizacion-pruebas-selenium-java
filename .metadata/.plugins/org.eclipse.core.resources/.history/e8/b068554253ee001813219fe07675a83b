@@ -1,0 +1,24 @@
+package com.casadellibro.certification.userinterfaces;
+
+import net.serenitybdd.core.annotations.findby.By;
+import net.serenitybdd.screenplay.targets.Target;
+
+public class MovieComponent {
+	
+	public static final Target ADD_BUY = Target.the("Add movie button").located(By.xpath("//a[@class='btn05compra purchase-button']"));
+	public static final Target START_BUY = Target.the("Buy movie button").located(By.xpath("//a[@title='Iniciar compra']"));
+	
+	//Componentes de alex
+	public static final Target ALL_PRODUCTS = Target.the("Button all Products").located(By.id("item01"));
+	public static final Target MOVIE = Target.the("Button movie").locatedBy("//*[@id=\"submenu\"]/li[4]/a");
+	public static final Target ALL_MOVIE = Target.the("Button all movie").locatedBy("//a[@title='Todas las películas']");
+	public static final Target CLOSE_DIALOG = Target.the("It closes pop-up message").locatedBy("//*[@id=\"contAvisoCookies\"]/div");
+	
+	//public static final Target TITLE_MOVIE = Target.the("Title of the movie in the order").located(By.xpath("//div[@title='DEADPOOL 2 - BLU RAY -']"));
+	//Componentes de Julian
+	public static final Target SELECT_MOVIE = Target.the("Selecting the movie").located(By.xpath("//a[contains(text(),'DEADPOOL 2 - BLU RAY -')]")); //Final porque es constante, target es el tipo de objeto
+	public static final Target SELECT_MORE_DETAILS = Target.the("Selecting more details").located(By.xpath("//a[@title='Ver opiniones de DEADPOOL 2 - BLU RAY -']"));
+}
+
+	
+}

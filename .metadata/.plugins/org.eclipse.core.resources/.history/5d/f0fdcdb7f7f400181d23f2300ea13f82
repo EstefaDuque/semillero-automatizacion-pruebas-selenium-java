@@ -1,0 +1,9 @@
+package com.latam.certification.userinterfaces;
+
+import net.serenitybdd.core.annotations.findby.By;
+import net.serenitybdd.screenplay.targets.Target;
+
+public class LoginComponent {
+	public static final Target LATAM_LOGIN = Target.the("Latam login button ").located(By.xpath("//a[@class='Header-complementaryLink Header-loginBtn']");
+
+}

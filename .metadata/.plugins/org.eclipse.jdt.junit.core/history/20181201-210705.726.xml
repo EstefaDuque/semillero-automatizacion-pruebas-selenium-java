@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RunnerTags" project="proyecto.screenplay" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="proyecto.screenplay.runners.RunnerTags" time="46.875">
+    <testsuite name="Característica: Ingresar a la pagina Mercury Tours" time="46.875">
+      <testcase name="Reservar vuelo" classname="Ingresar a la pagina Mercury Tours" time="46.875">
+        <error>net.serenitybdd.core.exceptions.SerenityManagedException: La pagina no cargo - 
+Expected: an element that is visible
+     but: no matching element found by xpath: /html/body/div/table/tbody/tr/td[2]/table/tbody/tr[2]/td/table/tbody/tr/td[2]/a&#13;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)&#13;
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)&#13;
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:187)&#13;
+	at proyecto.screenplay.tasks.Abrir.performAs(Abrir.java:22)&#13;
+	at proyecto.screenplay.tasks.Abrir$$EnhancerByCGLIB$$1bd6e5eb.CGLIB$performAs$0(&lt;generated&gt;)&#13;
+	at proyecto.screenplay.tasks.Abrir$$EnhancerByCGLIB$$1bd6e5eb$$FastClassByCGLIB$$1df17c01.invoke(&lt;generated&gt;)&#13;
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)&#13;
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)&#13;
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)&#13;
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:361)&#13;
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:132)&#13;
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)&#13;
+	at proyecto.screenplay.tasks.Abrir$$EnhancerByCGLIB$$1bd6e5eb.performAs(&lt;generated&gt;)&#13;
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:106)&#13;
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:90)&#13;
+	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:84)&#13;
+	at proyecto.screenplay.stepdefinitions.MercuryToursStepDefinitions.que_Malory_quiere_ingresar_a_la_pagina_con_usuario_y_contraseña(MercuryToursStepDefinitions.java:45)&#13;
+	at ✽.que Malory quiere ingresar a la pagina con usuario y contraseña(src/test/resources/features/mercury_tours.feature:19)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

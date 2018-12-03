@@ -1,0 +1,5 @@
+package com.latam.certification.tasks;
+
+public class EnterDataSearch implements Task {
+
+}

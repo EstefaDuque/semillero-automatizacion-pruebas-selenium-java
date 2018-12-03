@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="BuyFlightRunner" project="LATAM_Screenplay" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="com.latam.certification.runners.BuyFlightRunner" time="124.475">
+    <testsuite name="Feature: Buy a flight in latam" time="124.475">
+      <testcase name="Buy a flight in latam" classname="Buy a flight in latam" time="124.475">
+        <failure>java.lang.AssertionError: We do not find the flight code - Expected net.serenitybdd.screenplay.QuestionSubject@29c26959
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;&#13;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)&#13;
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)&#13;
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:187)&#13;
+	at com.latam.certification.stepdefinitions.BuyFlightStepDefinitions.sheWillVerifyYourReservationCode(BuyFlightStepDefinitions.java:57)&#13;
+	at ✽.she will verify your reservation code(src/test/resources/features/buy_flight.feature:46)&#13;
+&#13;
+</failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

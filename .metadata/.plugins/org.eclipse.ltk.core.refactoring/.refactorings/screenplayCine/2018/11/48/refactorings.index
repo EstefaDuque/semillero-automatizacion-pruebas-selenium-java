@@ -1,0 +1,13 @@
+1543595780941	Delete element
+1543595900041	Rename resource 'buscar_pelicula.feature'
+1543595973112	Rename type 'BuscarPeliculaStepDefinitions'
+1543596677776	Rename type 'BuscarPeliculaRunner'
+1543597900204	Delete element
+1543598308533	Rename type 'GoTo'
+1543598478519	Rename type 'SelectMovie'
+1543600992172	Delete element
+1543601050866	Rename type 'MovieComponent'
+1543601082663	Rename type 'CasaDelLibroMoviesComponents'
+1543601103848	Rename type 'SelectMovieComponents'
+1543601128282	Rename type 'ComponentBuscaPelicula'
+1543601150261	Rename type 'CineCasaDelLibro'

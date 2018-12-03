@@ -1,0 +1,32 @@
+package com.latam.certification.questions;
+
+import com.latam.certification.tasks.EnterData;
+import com.latam.certification.userinterfaces.LoginComponent;
+
+import net.serenitybdd.core.steps.Instrumented;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Question; //paquete le permiten acceder a casi cualquier cosa visible en la página web
+import net.serenitybdd.screenplay.questions.Text;
+import static net.serenitybdd.screenplay.questions.WebElementQuestion.the;
+
+public class UserNameHeader implements Question<Boolean> {
+
+	private static String loginErrorMessage = "wrong credentials";
+	
+	
+	
+	@Override
+	public Boolean answeredBy(Actor actor) {
+		//Retorna el nombre del usuario que se encuentra en la cabecera de la página
+		//return The(LoginComponent.USERNAME).viewedBy(actor).
+	
+				return the(LoginComponent.USERNAME).answeredBy(actor).isVisible();
+}
+
+	public static UserNameHeader page(){
+		
+		return new UserNameHeader();
+			
+	}
+	
+}

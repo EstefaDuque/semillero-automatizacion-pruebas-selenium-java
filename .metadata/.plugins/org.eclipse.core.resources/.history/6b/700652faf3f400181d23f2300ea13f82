@@ -1,0 +1,66 @@
+package com.latam.certification.stepdefinitions;
+
+
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.WebDriver;
+
+import com.latam.certification.tasks.OpenTheApplication;
+import com.latam.certification.userinterfaces.LatamHomePage;
+
+import cucumber.api.java.Before;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
+import net.thucydides.core.annotations.Managed;
+import static net.serenitybdd.screenplay.GivenWhenThen.givenThat;
+
+public class LoginStepDefinitions {
+	
+	@Managed(driver = "chrome")// Le indicamos el nombre del navegador que vamos a usar
+	private WebDriver herBrowser;
+	
+	//Creamos el actor,el método named hace lo mismo que un constructor.
+	private Actor alice = Actor.named("Alice");
+	
+	private LatamHomePage latamHomePage;
+	
+	//Método para realizar el enlace entre el autor y el driver.
+	@Before
+	public void setUp() {
+		
+		//BrowseTheWeb es la habilidad que tiene el actor para abrir el naveador.
+		alice.can(BrowseTheWeb.with(herBrowser));
+		
+		/*implicitlyWait se utiliza para establecer el tiempo de espera predeterminado en 
+		todo el programa, evita errores de tipo org.openqa.selenium.NoSuchElementException:
+		no such element.*/
+		herBrowser.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS) ;
+	}
+	
+	@Given("^that alice opened the homepage of latam$")
+	public void thatAliceOpenedTheHomepageOfLatam() {
+		//OpenTheApplication Abre la pagina que le enviemos
+		givenThat(alice).wasAbleTo(OpenTheApplication.on(latamHomePage));
+	}
+
+	@Given("^she wanted to login$")
+	public void sheWantedToLogin(){
+	   
+	}
+
+	@When("^she enters her information \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void sheEntersHerInformationAnd(String arg1, String arg2) {
+	}
+
+	@When("^she enters to her account$")
+	public void sheEntersToHerAccount() {
+	}
+
+	@Then("^she will verify that she login correctly$")
+	public void sheWillVerifyThatSheLoginCorrectly()  {
+	    
+	}
+
+}

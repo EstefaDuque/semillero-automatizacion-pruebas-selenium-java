@@ -1,0 +1,27 @@
+package com.latam.certification.tasks;
+
+import net.serenitybdd.core.steps.Instrumented;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Task;
+
+public class EnterData implements Task {
+	
+	private String user,password;
+
+	public EnterData(String user, String password) {
+		this.user=user;
+		this.password=password;
+	}
+	@Override
+	public <T extends Actor> void performAs(T actor) {
+		actor.attemptsTo(););
+		
+	}
+
+	public static EnterData login(String user, String password) {
+		return Instrumented.instanceOf(EnterData.class)
+			.withProperties(user,password);
+				
+	}
+
+}

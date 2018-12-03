@@ -1,0 +1,22 @@
+package com.latam.certification.userinterfaces;
+
+import net.serenitybdd.core.annotations.findby.By;
+import net.serenitybdd.screenplay.targets.Target;
+
+public class SearchFlightComponent {
+
+	/*La clase Target es una forma conveniente de asociar un texto legible por el usuario ("what_needs_to_be_done") con una
+	estrategia de ubicación WebDriver.*/
+	public static final Target ORIGIN_FLIGHT = Target.the("Origin of the flight").located(By.id("compra-select-origin"));
+	public static final Target DESTINATION_FLIGHT = Target.the("Destination of the flight").located(By.id("compra-select-destination"));
+	public static final Target FLIGHT_TYPE_ONE_WAY = Target.the("Type of flight one way").located(By.xpath("//div[contains(@class,'compra__flight-date-region')]//input[contains(@value,'showDepartureOnly')]"));
+	public static final Target FLIGHT_TYPE_ROUND_TRIP = Target.the("Type of flight round trip").located(By.xpath("//div[contains(@class,'compra__flight-date-region')]//input[contains(@value,'showDepartureAndReturn')]"));
+	public static final Target DEPARTURE_DATE = Target.the("Departure date of the flight").located(By.xpath("//div[@class='compra__flight-date-region']//div[@class='flight-date__departure-day-region']//div[@class='box-input']"));
+	public static final Target PASSENGER_COUNT = Target.the("Number of passengers").located(By.id("compra-passenger-count-id"));
+	public static final Target SUBMIT_SEARCH_FLIGH = Target.the("Search flight button").located(By.xpath("//button[contains(text(),'Busca tu vuelo')]"));
+	public static final Target FIRST_OPTION_ORIGIN = Target.the("First option of origin").located(By.id("ui-id-1"));
+	public static final Target FIRST_OPTION_DESTINATION = Target.the("First option of origin").located(By.id("ui-id-2"));
+
+	
+	
+}

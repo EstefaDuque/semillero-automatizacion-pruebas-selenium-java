@@ -1,0 +1,27 @@
+package com.latam.certification.userinterfaces;
+
+import net.serenitybdd.core.annotations.findby.By;
+import net.serenitybdd.screenplay.targets.Target;
+
+public class SearchFlightComponent {
+
+	/*La clase Target es una forma conveniente de asociar un texto legible por el usuario ("what_needs_to_be_done") con una
+	estrategia de ubicación WebDriver.*/
+	public static final Target ORIGIN_FLIGHT = Target.the("Origin of the flight").located(By.id("compra-select-origin"));
+	public static final Target DESTINATION_FLIGHT = Target.the("Destination of the flight").located(By.id("compra-select-destination"));
+	public static final Target FLIGHT_TYPE_ONE_WAY = Target.the("Type of flight one way").located(By.xpath("//div[contains(@class,'compra__flight-date-region')]//input[contains(@value,'showDepartureOnly')]"));
+	public static final Target FLIGHT_TYPE_ROUND_TRIP = Target.the("Type of flight round trip").located(By.xpath("//div[contains(@class,'compra__flight-date-region')]//input[contains(@value,'showDepartureAndReturn')]"));
+	public static final Target DEPARTURE_DATE = Target.the("Departure date of the flight").located(By.xpath("//div[@class='compra__flight-date-region']//div[@class='flight-date__departure-day-region']//div[@class='box-input']"));
+	public static final Target PASSENGER_COUNT = Target.the("Number of passengers").located(By.id("compra-passenger-count-id"));
+	public static final Target SUBMIT_SEARCH_FLIGH = Target.the("Search flight button").located(By.xpath("//button[contains(text(),'Busca tu vuelo')]"));
+	public static final Target FIRST_OPTION_ORIGIN = Target.the("First option of origin").located(By.id("ui-id-1"));
+	public static final Target FIRST_OPTION_DESTINATION = Target.the("First option of origin").located(By.id("ui-id-2"));
+	public static final Target MORE_ADULTS = Target.the("More adult passengers").located(By.xpath("//div[@class='box-component passenger-count col-xs-12 col-md-12 active']//div[@class='row adults-content passengers-content show']//span[@class='input-group-btn more']"));
+	public static final Target CHILDREN_BABIES = Target.the("link more children or babies").located(By.xpath("//div[@class='box-component passenger-count col-xs-12 col-md-12 active']//div[@class='box-panel shadow-box spinners col-xs-12 col-sm-12']//div//a[@class='link-children-or-babies'][contains(text(),'Añadir niños o bebés')]"));
+	public static final Target MORE_CHILDREN = Target.the("More children passengers").located(By.xpath("//div[@class='row children-content passengers-content']//span[@class='icon-int-more icon-xsmall']"));
+	public static final Target MORE_BABIES = Target.the("More babies passengers").located(By.xpath("//div[@class='row infants-content passengers-content']//span[@class='input-group-btn more']"));
+	public static final Target FLIGHT_LIST = Target.the("Container flight list").located(By.xpath("//section[@class='container flight-list']"));
+	public static final Target DEPARTURE_DATE_DAY = Target.the("Departure day of the flight").located(By.cssSelector("body.lan:nth-child(2) main.ha-waypoint:nth-child(7) section.l-section:nth-child(3) div.container div.parbase.cajaDeReserva.base.reserva.xk-component.xk-section-base div.Sales.col-md-12.col-lg-12.col-xs-12.col-center div.homepage__bookingbox-region:nth-child(2) div.bookingbox.tabs.layout-component div.container-fluid.lan div.row div.col-sm-9.col-xs-12.shadow-box-mobile div.row.panel-group.color-bg.color-bg-tabpanel div.panel.col-sm-12.col-xs-12:nth-child(1) div.no-transition.panel-collapse.collapse.in.color-bg div.col-xs-12 div.row div.col-sm-push-0.col-xs-12.col-sm-12 div.bookingbox__compra-region.tabs__compra-region.layout-component__compra-region div.compra.layout-component div.compra__compra-region form.compra.compra-form.form.layout-component div.color-bg div.row div.col-xs-12 div.row div.compra__flight-date-region div.flight-date.layout-component div.flightDate-calendar div.scnd-col.col-xs-12 div.flightDate-calendar-cont.shadow-box.animable div.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all.ui-datepicker-multi.ui-datepicker-multi-2 div.ui-datepicker-group.ui-datepicker-group-first:nth-child(1) table.ui-datepicker-calendar tbody:nth-child(2) tr:nth-child(2) > td.ui-datepicker-week-end.departure-day:nth-child(6)"));
+
+	
+}

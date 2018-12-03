@@ -1,0 +1,10 @@
+package co.com.bancolombia.certification.googlesuite.userinterfaces;
+
+import net.thucydides.core.annotations.DefaultUrl;
+
+//Mapea la url de la página
+@DefaultUrl("https://www.google.com")
+
+public class GoogleHomePage extends PageObject {
+
+}

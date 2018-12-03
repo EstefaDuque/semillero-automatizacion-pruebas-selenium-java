@@ -1,0 +1,29 @@
+package com.latam.certification.interactions;
+
+import net.serenitybdd.core.steps.Instrumented;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Interaction;
+import net.serenitybdd.screenplay.Tasks;
+import net.serenitybdd.screenplay.targets.Target;
+
+public class SelectFlightRandom implements Interaction{
+
+	private Target list;
+	
+	public SelectFlightRandom(Target list) {
+		this.list=list;
+	}
+	@Override
+	public <T extends Actor> void performAs(T actor) {
+		
+		flightList.resolveAllFor(actor).size();
+		
+	}
+	public static SelectFlightRandom ofList(Target list)
+	{
+		return Instrumented.instanceOf(SelectFlightRandom.class)
+				.withProperties(list);
+
+	}
+
+}

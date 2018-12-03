@@ -1,0 +1,51 @@
+package com.latam.certification.stepdefinitions;
+
+import java.util.List;
+
+import com.latam.certification.models.AdultPassenger;
+import com.latam.certification.models.BabyPassenger;
+import com.latam.certification.models.ChildPassenger;
+import com.latam.certification.models.ContactInformation;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class SelectFlightStepDefinitions {
+	
+	@Given("^that alice wanted to generate a random number$")
+	public void thatAliceWantedToGenerateARandomNumber()  {
+	    // Write code here that turns the phrase above into concrete actions
+	}
+
+	@When("^she enters the data of the adult passengers$")
+	public void sheEntersTheDataOfTheAdultPassengers(List<AdultPassenger> adultData) throws Exception {
+	   
+	 
+	}
+
+	@When("^she enters the data of the children passengers$")
+	public void sheEntersTheDataOfTheChildrenPassengers(List<ChildPassenger> childData) {
+	    	   
+	}
+
+	@When("^she enters the data of the babies passengers$")
+	public void sheEntersTheDataOfTheBabiesPassengers(List<BabyPassenger> babyData)  {
+	    
+	   
+	}
+
+	@When("^she enters contact information$")
+	public void sheEntersContactInformation(List<ContactInformation> contactInformation)  {
+	
+	    
+	}
+
+	@Then("^she will verify your reservation$")
+	public void sheWillVerifyYourReservation()  {
+	    // Write code here that turns the phrase above into concrete actions
+	    
+	}
+
+
+}

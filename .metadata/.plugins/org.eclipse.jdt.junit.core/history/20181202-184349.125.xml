@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="SelectFlightRunner" project="LATAM_Screenplay" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.latam.certification.runners.SelectFlightRunner" time="104.142">
+    <testsuite name="Feature: Select a flight in latam" time="104.142">
+      <testcase name="Select a random flight in latam" classname="Select a flight in latam" time="104.142"/>
+    </testsuite>
+  </testsuite>
+</testrun>

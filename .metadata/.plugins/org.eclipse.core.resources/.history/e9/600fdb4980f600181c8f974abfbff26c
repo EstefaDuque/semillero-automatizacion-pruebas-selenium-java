@@ -1,0 +1,82 @@
+package com.latam.certification.stepdefinitions;
+
+import static net.serenitybdd.screenplay.GivenWhenThen.givenThat;
+
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+
+import com.latam.certification.models.AdultPassenger;
+import com.latam.certification.models.BabyPassenger;
+import com.latam.certification.models.ChildPassenger;
+import com.latam.certification.models.ContactInformation;
+import com.latam.certification.tasks.ChooseFlight;
+
+import com.latam.certification.userinterfaces.SelectFlightComponent;
+
+import cucumber.api.java.Before;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
+import net.thucydides.core.annotations.Managed;
+
+public class SelectFlightStepDefinitions {
+	
+	@Managed(driver = "chrome")// Le indicamos el nombre del navegador que vamos a usar
+	private WebDriver herBrowser;
+	
+	//Creamos el actor,el método named hace lo mismo que un constructor.
+	private Actor alice = Actor.named("Alice");
+	
+	//Método para realizar el enlace entre el autor y el driver.
+	@Before
+	public void setUp() {
+		
+		//BrowseTheWeb es la habilidad que tiene el actor para abrir el naveador.
+		alice.can(BrowseTheWeb.with(herBrowser));
+		
+		/*implicitlyWait se utiliza para establecer el tiempo de espera predeterminado en 
+		todo el programa, evita errores de tipo org.openqa.selenium.NoSuchElementException:
+		no such element.*/
+		herBrowser.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS) ;
+	}
+	
+	@Given("^that alice wanted to generate a random number$")
+	public void thatAliceWantedToGenerateARandomNumber()  {
+		givenThat(alice).wasAbleTo(ChooseFlight.of(SelectFlightComponent.FLIGHT_LIST));
+	}
+
+	@When("^she enters the data of the adult passengers$")
+	public void sheEntersTheDataOfTheAdultPassengers(List<AdultPassenger> adultData) throws Exception {
+	   
+	 
+	}
+
+	@When("^she enters the data of the children passengers$")
+	public void sheEntersTheDataOfTheChildrenPassengers(List<ChildPassenger> childData) {
+	    	   
+	}
+
+	@When("^she enters the data of the babies passengers$")
+	public void sheEntersTheDataOfTheBabiesPassengers(List<BabyPassenger> babyData)  {
+	    
+	   
+	}
+
+	@When("^she enters contact information$")
+	public void sheEntersContactInformation(List<ContactInformation> contactInformation)  {
+	
+	    
+	}
+
+	@Then("^she will verify your reservation$")
+	public void sheWillVerifyYourReservation()  {
+	    // Write code here that turns the phrase above into concrete actions
+	    
+	}
+
+
+}
