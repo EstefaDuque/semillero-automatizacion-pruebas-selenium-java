@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.latam.certification.runners.LoginRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="RC-PC" time="0.0">
+  <properties/>
+  <system-out><![CDATA[@loginLatam
+Feature: Login in LATAM
+  As Alice 
+  I want to use latam.com 
+  to do login
+
+  @loginLatam @tag1 @successfulLogin @smokeTest
+  Scenario: Successful Login in Latam                   ?[90m# src/test/resources/features/login.feature:10?[0m
+
+  @loginLatam @tag2 @wrongUser
+  Scenario: UnSuccessful Login in Latam                 ?[90m# src/test/resources/features/login.feature:19?[0m
+
+  @loginLatam @tag3 @wrongPassword
+  Scenario: UnSuccessful Login in Latam                 ?[90m# src/test/resources/features/login.feature:28?[0m
+
+  @loginLatam @tag4 @wrongUserAndPassword
+  Scenario: UnSuccessful Login in Latam                 ?[90m# src/test/resources/features/login.feature:37?[0m
+
+?[31mFailed scenarios:?[0m
+?[31msrc/test/resources/features/login.feature:19 ?[0m# UnSuccessful Login in Latam
+?[31msrc/test/resources/features/login.feature:28 ?[0m# UnSuccessful Login in Latam
+?[31msrc/test/resources/features/login.feature:37 ?[0m# UnSuccessful Login in Latam
+
+4 Scenarios (?[31m3 failed?[0m, ?[32m1 passed?[0m)
+12 Steps (?[31m3 failed?[0m, ?[32m9 passed?[0m)
+3m25,858s
+
+java.lang.AssertionError: Wrong credentials login - Expected net.serenitybdd.screenplay.QuestionSubject@469ad37
+Expected: is <true>
+     but: was <false>
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:187)
+	at com.latam.certification.stepdefinitions.LoginStepDefinitions.sheWillVerifyThatSheEnteredCorrectly(LoginStepDefinitions.java:84)
+	at ?.she will verify that she entered correctly(src/test/resources/features/login.feature:25)
+
+java.lang.AssertionError: Wrong credentials login - Expected net.serenitybdd.screenplay.QuestionSubject@2303ff0e
+Expected: is <true>
+     but: was <false>
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:187)
+	at com.latam.certification.stepdefinitions.LoginStepDefinitions.sheWillVerifyThatSheEnteredCorrectly(LoginStepDefinitions.java:84)
+	at ?.she will verify that she entered correctly(src/test/resources/features/login.feature:34)
+
+java.lang.AssertionError: Wrong credentials login - Expected net.serenitybdd.screenplay.QuestionSubject@77fe5087
+Expected: is <true>
+     but: was <false>
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:187)
+	at com.latam.certification.stepdefinitions.LoginStepDefinitions.sheWillVerifyThatSheEnteredCorrectly(LoginStepDefinitions.java:84)
+	at ?.she will verify that she entered correctly(src/test/resources/features/login.feature:43)
+
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Login in LATAM
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Successful Login in Latam
+-------------------------------------------------------------------(login-in-latam;successful-login-in-latam)
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Successful Login in Latam
+----------------------------------------------------------------------------
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: UnSuccessful Login in Latam
+-------------------------------------------------------------------(login-in-latam;unsuccessful-login-in-latam)
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED: UnSuccessful Login in Latam
+--------------------------------------------------------------------------
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Then user name header
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Wrong credentials login - Expected net.serenitybdd.screenplay.QuestionSubject@469ad37Expected: is <true> but: was <false>
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED: UnSuccessful Login in Latam
+--------------------------------------------------------------------------
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Then user name header
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Wrong credentials login - Expected net.serenitybdd.screenplay.QuestionSubject@469ad37Expected: is <true> but: was <false>
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED: UnSuccessful Login in Latam
+--------------------------------------------------------------------------
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Then user name header
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Wrong credentials login - Expected net.serenitybdd.screenplay.QuestionSubject@469ad37Expected: is <true> but: was <false>
+]]></system-err>
+</testsuite>

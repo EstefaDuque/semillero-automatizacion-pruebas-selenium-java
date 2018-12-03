@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Select a flight in latam</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Select a flight in latam</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Select a flight in latam</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2m22.17s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Select a random flight in latam</td>
+<td class="success">2m22.17s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>    ?[32mGiven ?[0m?[32mthat alice wanted to login?[0m                                     ?[90m# LoginStepDefinitions.thatAliceWantedToLogin()?[0m
+    ?[32mWhen ?[0m?[32mshe enters to her account with her information?[0m                  ?[90m# LoginStepDefinitions.sheEntersToHerAccountWithHerInformation(LoginModel&gt;)?[0m
+    ?[32mThen ?[0m?[32mshe will verify that she entered correctly?[0m                      ?[90m# LoginStepDefinitions.sheWillVerifyThatSheEnteredCorrectly()?[0m
+    ?[32mWhen ?[0m?[32malice enters the search criteria?[0m                                ?[90m# SearchFlightStepDefinitions.aliceEntersTheSearchCriteria(SearchDataFlight&gt;)?[0m
+    ?[32mThen ?[0m?[32mshe will verify that she found at least one flight?[0m              ?[90m# SearchFlightStepDefinitions.sheWillVerifyThatSheFoundAtLeastOneFlight()?[0m
+
+  @selectFlight
+  Scenario: Select a random flight in latam            ?[90m# src/test/resources/features/select_flight.feature:23?[0m
+    ?[32mGiven ?[0m?[32mshe wanted to select a flight randomly?[0m       ?[90m# SelectFlightStepDefinitions.she_wanted_to_select_a_flight_randomly()?[0m
+    ?[32mWhen ?[0m?[32mshe enters the data of the adult passengers?[0m   ?[90m# SelectFlightStepDefinitions.sheEntersTheDataOfTheAdultPassengers(AdultPassenger&gt;)?[0m
+    ?[32mAnd ?[0m?[32mshe enters the data of the children passengers?[0m ?[90m# SelectFlightStepDefinitions.sheEntersTheDataOfTheChildrenPassengers(ChildPassenger&gt;)?[0m
+    ?[32mAnd ?[0m?[32mshe enters the data of the babies passengers?[0m   ?[90m# SelectFlightStepDefinitions.sheEntersTheDataOfTheBabiesPassengers(BabyPassenger&gt;)?[0m
+    ?[32mAnd ?[0m?[32mshe enters contact information?[0m                 ?[90m# SelectFlightStepDefinitions.sheEntersContactInformation(ContactInformation&gt;)?[0m
+    ?[32mThen ?[0m?[32mshe will verify your reservation?[0m              ?[90m# SelectFlightStepDefinitions.sheWillVerifyYourReservation()?[0m
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>dic 03, 2018 2:09:43 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+dic 03, 2018 2:09:44 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: OSS
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Select a random flight in latam
+----------------------------------------------------------------------------
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.10.2</a> at 3/12/2018 02:12:07 AM</p>
+</div>
+</div>
+</body>
+</html>

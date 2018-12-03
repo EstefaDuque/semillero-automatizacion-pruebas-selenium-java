@@ -1,0 +1,346 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "line": 9,
+        "name": "Successful Login in Latam and To look for flights in Latam",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 20408419605,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "that alice wanted to login",
+            "match": {
+              "location": "LoginStepDefinitions.thatAliceWantedToLogin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 16089220891,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "she enters to her account with her information",
+            "match": {
+              "location": "LoginStepDefinitions.sheEntersToHerAccountWithHerInformation(LoginModel\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "user",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "faniam4@gmail.com",
+                  "123456789Md"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2155176371,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "she will verify that she entered correctly",
+            "match": {
+              "location": "LoginStepDefinitions.sheWillVerifyThatSheEnteredCorrectly()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 29110599153,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "alice enters the search criteria",
+            "match": {
+              "location": "SearchFlightStepDefinitions.aliceEntersTheSearchCriteria(SearchDataFlight\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "origin",
+                  "destination",
+                  "flightTypes",
+                  "departureDate",
+                  "adultPassengers",
+                  "childrenPassengers",
+                  "babyPassengers"
+                ]
+              },
+              {
+                "cells": [
+                  "Jose Maria Cordova",
+                  "Gustavo Rojas Pinilla",
+                  "Solo ida",
+                  "15/12/2018",
+                  "1",
+                  "1",
+                  "1"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2923036522,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "she will verify that she found at least one flight",
+            "match": {
+              "location": "SearchFlightStepDefinitions.sheWillVerifyThatSheFoundAtLeastOneFlight()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3087010532,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BuyFlightStepDefinitions.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 34875274,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SearchFlightStepDefinitions.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 30713575,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDefinitions.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 31103994,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SelectFlightStepDefinitions.setUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Select a random flight in latam",
+        "description": "",
+        "id": "select-a-flight-in-latam;select-a-random-flight-in-latam",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3771129247,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "she wanted to select a flight randomly",
+            "match": {
+              "location": "SelectFlightStepDefinitions.she_wanted_to_select_a_flight_randomly()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12187244708,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "she enters the data of the adult passengers",
+            "match": {
+              "location": "SelectFlightStepDefinitions.sheEntersTheDataOfTheAdultPassengers(AdultPassenger\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "adultName",
+                  "adultLastname",
+                  "adultIdType",
+                  "adultIdNumber",
+                  "adultOrigineCountry"
+                ]
+              },
+              {
+                "cells": [
+                  "Maria Isabel",
+                  "Restrepo Tobon",
+                  "Pasaporte",
+                  "10406073",
+                  "Colombia"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10564628661,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "she enters the data of the children passengers",
+            "match": {
+              "location": "SelectFlightStepDefinitions.sheEntersTheDataOfTheChildrenPassengers(ChildPassenger\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "childName",
+                  "childLastname",
+                  "childIdType",
+                  "childIdNumber",
+                  "childOrigineCountry",
+                  "childBirthDateDay",
+                  "childBirthDateMonth",
+                  "childBirthDateYear"
+                ]
+              },
+              {
+                "cells": [
+                  "Emilio",
+                  "Restrepo Perez",
+                  "Pasaporte",
+                  "32873490",
+                  "Colombia",
+                  "27",
+                  "enero",
+                  "2010"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10552676332,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "she enters the data of the babies passengers",
+            "match": {
+              "location": "SelectFlightStepDefinitions.sheEntersTheDataOfTheBabiesPassengers(BabyPassenger\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "babyName",
+                  "babyLastname",
+                  "babyIdType",
+                  "babyIdNumber",
+                  "babyOrigineCountry",
+                  "babyBirthDateDay",
+                  "babyBirthDateMonth",
+                  "babyBirthDateYear"
+                ]
+              },
+              {
+                "cells": [
+                  "Valeria",
+                  "Restrepo Perez",
+                  "Pasaporte",
+                  "2387294",
+                  "Colombia",
+                  "03",
+                  "febrero",
+                  "2017"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25187524118,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "she enters contact information",
+            "match": {
+              "location": "SelectFlightStepDefinitions.sheEntersContactInformation(ContactInformation\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "contactEmail",
+                  "contactPhoneType",
+                  "contactCountry",
+                  "contactAreaCode",
+                  "contactPhoneNumber"
+                ]
+              },
+              {
+                "cells": [
+                  "maria32@gmail.com",
+                  "Movil",
+                  "Colombia +57",
+                  "57",
+                  "3174545043"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 971688973,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "she will verify your reservation",
+            "match": {
+              "location": "SelectFlightStepDefinitions.sheWillVerifyYourReservation()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@selectFlight"
+          }
+        ]
+      }
+    ],
+    "name": "Select a flight in latam",
+    "description": "\tAs Alice \n  I want to use latam.com \n  to select a flight",
+    "id": "select-a-flight-in-latam",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/select_flight.feature",
+    "tags": [
+      {
+        "name": "@selectFlight",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

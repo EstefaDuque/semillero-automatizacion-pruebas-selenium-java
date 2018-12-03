@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Login in LATAM" skipped="0" tests="2" time="205.85" timestamp="2018-12-03 02:04:55"><testcase name="Successful Login in Latam"/><testcase name="UnSuccessful Login in Latam"><failure message="Wrong credentials login - Expected net.serenitybdd.screenplay.QuestionSubject@469ad37&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">Wrong credentials login - Expected net.serenitybdd.screenplay.QuestionSubject@469ad37
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;</failure><system-err>Wrong credentials login - Expected net.serenitybdd.screenplay.QuestionSubject@469ad37
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;&#13;
+com.latam.certification.stepdefinitions.LoginStepDefinitions.sheWillVerifyThatSheEnteredCorrectly(LoginStepDefinitions.java:84)&#13;
+✽.she will verify that she entered correctly(src/test/resources/features/login.feature:25)&#13;
+</system-err></testcase></testsuite>

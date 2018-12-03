@@ -1,0 +1,182 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "line": 9,
+        "name": "Successful Login in Latam",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 22933248579,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "that alice wanted to login",
+            "match": {
+              "location": "LoginStepDefinitions.thatAliceWantedToLogin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15995555116,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "she enters to her account with her information",
+            "match": {
+              "location": "LoginStepDefinitions.sheEntersToHerAccountWithHerInformation(LoginModel\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "user",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "faniam4@gmail.com",
+                  "123456789Md"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2284334011,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "she will verify that she entered correctly",
+            "match": {
+              "location": "LoginStepDefinitions.sheWillVerifyThatSheEnteredCorrectly()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2923241549,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BuyFlightStepDefinitions.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 26032326,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SearchFlightStepDefinitions.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 31919569,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDefinitions.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 24508408,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SelectFlightStepDefinitions.setUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "To look for flights in Latam",
+        "description": "",
+        "id": "to-look-for-a-flight-in-latam;to-look-for-flights-in-latam",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 28419820287,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "alice enters the search criteria",
+            "match": {
+              "location": "SearchFlightStepDefinitions.aliceEntersTheSearchCriteria(SearchDataFlight\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "origin",
+                  "destination",
+                  "flightTypes",
+                  "departureDate",
+                  "adultPassengers",
+                  "childrenPassengers",
+                  "babyPassengers"
+                ]
+              },
+              {
+                "cells": [
+                  "Jose Maria Cordova",
+                  "Gustavo Rojas Pinilla",
+                  "Solo ida",
+                  "15/12/2018",
+                  "1",
+                  "1",
+                  "1"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4511882476,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "she will verify that she found at least one flight",
+            "match": {
+              "location": "SearchFlightStepDefinitions.sheWillVerifyThatSheFoundAtLeastOneFlight()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@searchFlight"
+          }
+        ]
+      }
+    ],
+    "name": "To look for a flight in LATAM",
+    "description": "\tAs Alice \n  I want to use latam.com \n  to do to look for a flight",
+    "id": "to-look-for-a-flight-in-latam",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/search_flight.feature",
+    "tags": [
+      {
+        "name": "@searchFlight",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="141.385618">
+<testcase classname="Select a flight in latam" name="Select a random flight in latam" time="141.385618">
+<system-out><![CDATA[Given that alice wanted to login............................................passed
+When she enters to her account with her information.........................passed
+Then she will verify that she entered correctly.............................passed
+When alice enters the search criteria.......................................passed
+Then she will verify that she found at least one flight.....................passed
+Given she wanted to select a flight randomly................................passed
+When she enters the data of the adult passengers............................passed
+And she enters the data of the children passengers..........................passed
+And she enters the data of the babies passengers............................passed
+And she enters contact information..........................................passed
+Then she will verify your reservation.......................................passed
+]]></system-out>
+</testcase>
+</testsuite>

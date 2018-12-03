@@ -1,0 +1,43 @@
+package com.latam.certification.models;
+
+public class ContactInformation {
+	
+	private String contactEmail;
+	private String contactPhoneType;
+	private String contactCountry;
+	private String contactAreaCode;
+	private String contactPhoneNumber;
+	
+	public String getContactEmail() {
+		return contactEmail;
+	}
+	public void setContactEmail(String contactEmail) {
+		this.contactEmail = contactEmail;
+	}
+	public String getContactPhoneType() {
+		return contactPhoneType;
+	}
+	public void setContactPhoneType(String contactPhoneType) {
+		this.contactPhoneType = contactPhoneType;
+	}
+	public String getContactCountry() {
+		return contactCountry;
+	}
+	public void setContactCountry(String contactCountry) {
+		this.contactCountry = contactCountry;
+	}
+	public String getContactAreaCode() {
+		return contactAreaCode;
+	}
+	public void setContactAreaCode(String contactAreaCode) {
+		this.contactAreaCode = contactAreaCode;
+	}
+	public String getContactPhoneNumber() {
+		return contactPhoneNumber;
+	}
+	public void setContactPhoneNumber(String contactPhoneNumber) {
+		this.contactPhoneNumber = contactPhoneNumber;
+	}
+
+	
+}

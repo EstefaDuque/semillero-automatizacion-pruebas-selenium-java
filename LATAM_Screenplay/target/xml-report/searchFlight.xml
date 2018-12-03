@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="79.720919">
+<testcase classname="To look for a flight in LATAM" name="To look for flights in Latam" time="79.720919">
+<system-out><![CDATA[Given that alice wanted to login............................................passed
+When she enters to her account with her information.........................passed
+Then she will verify that she entered correctly.............................passed
+When alice enters the search criteria.......................................passed
+Then she will verify that she found at least one flight.....................passed
+]]></system-out>
+</testcase>
+</testsuite>

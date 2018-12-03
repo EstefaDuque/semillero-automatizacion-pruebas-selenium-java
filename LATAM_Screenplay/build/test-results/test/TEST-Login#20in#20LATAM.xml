@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Login in LATAM" tests="4" skipped="0" failures="3" errors="0" timestamp="2018-12-03T07:04:55" hostname="RC-PC" time="205.838">
+  <properties/>
+  <testcase name="Successful Login in Latam" classname="Login in LATAM" time="44.014"/>
+  <testcase name="UnSuccessful Login in Latam" classname="Login in LATAM" time="55.349">
+    <failure message="java.lang.AssertionError: Wrong credentials login - Expected net.serenitybdd.screenplay.QuestionSubject@469ad37&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: Wrong credentials login - Expected net.serenitybdd.screenplay.QuestionSubject@469ad37
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:187)
+	at com.latam.certification.stepdefinitions.LoginStepDefinitions.sheWillVerifyThatSheEnteredCorrectly(LoginStepDefinitions.java:84)
+	at ✽.she will verify that she entered correctly(src/test/resources/features/login.feature:25)
+</failure>
+  </testcase>
+  <testcase name="UnSuccessful Login in Latam" classname="Login in LATAM" time="53.849">
+    <failure message="java.lang.AssertionError: Wrong credentials login - Expected net.serenitybdd.screenplay.QuestionSubject@2303ff0e&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: Wrong credentials login - Expected net.serenitybdd.screenplay.QuestionSubject@2303ff0e
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:187)
+	at com.latam.certification.stepdefinitions.LoginStepDefinitions.sheWillVerifyThatSheEnteredCorrectly(LoginStepDefinitions.java:84)
+	at ✽.she will verify that she entered correctly(src/test/resources/features/login.feature:34)
+</failure>
+  </testcase>
+  <testcase name="UnSuccessful Login in Latam" classname="Login in LATAM" time="52.604">
+    <failure message="java.lang.AssertionError: Wrong credentials login - Expected net.serenitybdd.screenplay.QuestionSubject@77fe5087&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: Wrong credentials login - Expected net.serenitybdd.screenplay.QuestionSubject@77fe5087
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:187)
+	at com.latam.certification.stepdefinitions.LoginStepDefinitions.sheWillVerifyThatSheEnteredCorrectly(LoginStepDefinitions.java:84)
+	at ✽.she will verify that she entered correctly(src/test/resources/features/login.feature:43)
+</failure>
+  </testcase>
+  <system-out><![CDATA[    ?[32mGiven ?[0m?[32mthat alice wanted to login?[0m                    ?[90m# LoginStepDefinitions.thatAliceWantedToLogin()?[0m
+    ?[32mWhen ?[0m?[32mshe enters to her account with her information?[0m ?[90m# LoginStepDefinitions.sheEntersToHerAccountWithHerInformation(LoginModel>)?[0m
+    ?[32mThen ?[0m?[32mshe will verify that she entered correctly?[0m     ?[90m# LoginStepDefinitions.sheWillVerifyThatSheEnteredCorrectly()?[0m
+    ?[32mGiven ?[0m?[32mthat alice wanted to login?[0m                    ?[90m# LoginStepDefinitions.thatAliceWantedToLogin()?[0m
+    ?[32mWhen ?[0m?[32mshe enters to her account with her information?[0m ?[90m# LoginStepDefinitions.sheEntersToHerAccountWithHerInformation(LoginModel>)?[0m
+    ?[31mThen ?[0m?[31mshe will verify that she entered correctly?[0m     ?[90m# LoginStepDefinitions.sheWillVerifyThatSheEnteredCorrectly()?[0m
+      ?[31mjava.lang.AssertionError: Wrong credentials login - Expected net.serenitybdd.screenplay.QuestionSubject@469ad37
+Expected: is <true>
+     but: was <false>
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:187)
+	at com.latam.certification.stepdefinitions.LoginStepDefinitions.sheWillVerifyThatSheEnteredCorrectly(LoginStepDefinitions.java:84)
+	at ?.she will verify that she entered correctly(src/test/resources/features/login.feature:25)
+?[0m
+    ?[32mGiven ?[0m?[32mthat alice wanted to login?[0m                    ?[90m# LoginStepDefinitions.thatAliceWantedToLogin()?[0m
+    ?[32mWhen ?[0m?[32mshe enters to her account with her information?[0m ?[90m# LoginStepDefinitions.sheEntersToHerAccountWithHerInformation(LoginModel>)?[0m
+    ?[31mThen ?[0m?[31mshe will verify that she entered correctly?[0m     ?[90m# LoginStepDefinitions.sheWillVerifyThatSheEnteredCorrectly()?[0m
+      ?[31mjava.lang.AssertionError: Wrong credentials login - Expected net.serenitybdd.screenplay.QuestionSubject@2303ff0e
+Expected: is <true>
+     but: was <false>
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:187)
+	at com.latam.certification.stepdefinitions.LoginStepDefinitions.sheWillVerifyThatSheEnteredCorrectly(LoginStepDefinitions.java:84)
+	at ?.she will verify that she entered correctly(src/test/resources/features/login.feature:34)
+?[0m
+    ?[32mGiven ?[0m?[32mthat alice wanted to login?[0m                    ?[90m# LoginStepDefinitions.thatAliceWantedToLogin()?[0m
+    ?[32mWhen ?[0m?[32mshe enters to her account with her information?[0m ?[90m# LoginStepDefinitions.sheEntersToHerAccountWithHerInformation(LoginModel>)?[0m
+    ?[31mThen ?[0m?[31mshe will verify that she entered correctly?[0m     ?[90m# LoginStepDefinitions.sheWillVerifyThatSheEnteredCorrectly()?[0m
+      ?[31mjava.lang.AssertionError: Wrong credentials login - Expected net.serenitybdd.screenplay.QuestionSubject@77fe5087
+Expected: is <true>
+     but: was <false>
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:187)
+	at com.latam.certification.stepdefinitions.LoginStepDefinitions.sheWillVerifyThatSheEnteredCorrectly(LoginStepDefinitions.java:84)
+	at ?.she will verify that she entered correctly(src/test/resources/features/login.feature:43)
+?[0m
+]]></system-out>
+  <system-err><![CDATA[dic 03, 2018 2:04:55 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+dic 03, 2018 2:04:56 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: OSS
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Successful Login in Latam
+----------------------------------------------------------------------------
+dic 03, 2018 2:05:39 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+dic 03, 2018 2:05:40 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: OSS
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED: UnSuccessful Login in Latam
+--------------------------------------------------------------------------
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Then user name header
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Wrong credentials login - Expected net.serenitybdd.screenplay.QuestionSubject@469ad37Expected: is <true> but: was <false>
+dic 03, 2018 2:06:34 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+dic 03, 2018 2:06:36 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: OSS
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED: UnSuccessful Login in Latam
+--------------------------------------------------------------------------
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Then user name header
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Wrong credentials login - Expected net.serenitybdd.screenplay.QuestionSubject@469ad37Expected: is <true> but: was <false>
+dic 03, 2018 2:07:28 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+dic 03, 2018 2:07:30 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: OSS
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED: UnSuccessful Login in Latam
+--------------------------------------------------------------------------
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Then user name header
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Wrong credentials login - Expected net.serenitybdd.screenplay.QuestionSubject@469ad37Expected: is <true> but: was <false>
+]]></system-err>
+</testsuite>

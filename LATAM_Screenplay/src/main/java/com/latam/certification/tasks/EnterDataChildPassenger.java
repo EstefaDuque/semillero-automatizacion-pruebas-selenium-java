@@ -1,0 +1,46 @@
+package com.latam.certification.tasks;
+
+import com.latam.certification.models.ChildPassenger;
+import com.latam.certification.userinterfaces.SelectFlightComponent;
+import net.serenitybdd.core.steps.Instrumented;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.actions.SelectFromOptions;
+import net.serenitybdd.screenplay.conditions.Check;
+import net.thucydides.core.annotations.Step;
+
+public class EnterDataChildPassenger implements Task {
+	
+	private ChildPassenger childData;
+
+	public EnterDataChildPassenger(ChildPassenger childData) {
+		this.childData= childData;
+	}
+	@Step("{0} enters the data of the children passengers")
+	@Override
+	public <T extends Actor> void performAs(T actor) {
+		
+		actor.attemptsTo(
+				Enter.theValue(this.childData.getChildName()).into(SelectFlightComponent.CHILD_NAME),
+				Enter.theValue(this.childData.getChildLastname()).into(SelectFlightComponent.CHILD_LASTNAME),
+				Check.whether(this.childData.getChildIdType().equals("Pasaporte")).
+		                andIfSo(Click.on(SelectFlightComponent.CHILD_ID_TYPE_PASSPORT)).otherwise(),
+		        Check.whether(this.childData.getChildIdType().equals("Cedula")).
+		                andIfSo(Click.on(SelectFlightComponent.CHILD_ID_TYPE_PASSPORT)).otherwise(),
+				Enter.theValue(this.childData.getChildIdNumber()).into(SelectFlightComponent.CHILD_ID_NUMBER),
+				SelectFromOptions.byVisibleText(this.childData.getChildOrigineCountry()).from(SelectFlightComponent.CHILD_ORIGIN_COUNTRY),
+				Enter.theValue(this.childData.getChildBirthDateDay()).into(SelectFlightComponent.CHILD_BIRTH_DATE_DAY),
+				SelectFromOptions.byVisibleText(this.childData.getChildBirthDateMonth()).from(SelectFlightComponent.CHILD_BIRTH_DATE_MONTH),
+				Enter.theValue(this.childData.getChildBirthDateYear()).into(SelectFlightComponent.CHILD_BIRTH_DATE_YEAR)
+
+				);
+		
+	}
+	public static EnterDataChildPassenger of(ChildPassenger childData) {
+		return Instrumented.instanceOf(EnterDataChildPassenger.class)
+			.withProperties(childData);
+				
+	}
+}

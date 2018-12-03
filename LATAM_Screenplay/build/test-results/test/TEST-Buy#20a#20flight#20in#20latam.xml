@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Buy a flight in latam" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-12-03T07:02:21" hostname="RC-PC" time="150.917">
+  <properties/>
+  <testcase name="Buy a flight in latam" classname="Buy a flight in latam" time="150.917"/>
+  <system-out><![CDATA[    ?[32mGiven ?[0m?[32mthat alice wanted to login?[0m                                                                       ?[90m# LoginStepDefinitions.thatAliceWantedToLogin()?[0m
+    ?[32mWhen ?[0m?[32mshe enters to her account with her information?[0m                                                    ?[90m# LoginStepDefinitions.sheEntersToHerAccountWithHerInformation(LoginModel>)?[0m
+    ?[32mThen ?[0m?[32mshe will verify that she entered correctly?[0m                                                        ?[90m# LoginStepDefinitions.sheWillVerifyThatSheEnteredCorrectly()?[0m
+    ?[32mWhen ?[0m?[32malice enters the search criteria?[0m                                                                  ?[90m# SearchFlightStepDefinitions.aliceEntersTheSearchCriteria(SearchDataFlight>)?[0m
+    ?[32mThen ?[0m?[32mshe will verify that she found at least one flight?[0m                                                ?[90m# SearchFlightStepDefinitions.sheWillVerifyThatSheFoundAtLeastOneFlight()?[0m
+    ?[32mGiven ?[0m?[32mshe wanted to select a flight randomly?[0m                                                           ?[90m# SelectFlightStepDefinitions.she_wanted_to_select_a_flight_randomly()?[0m
+    ?[32mWhen ?[0m?[32mshe enters the data of the adult passengers?[0m                                                       ?[90m# SelectFlightStepDefinitions.sheEntersTheDataOfTheAdultPassengers(AdultPassenger>)?[0m
+    ?[32mAnd ?[0m?[32mshe enters the data of the children passengers?[0m                                                     ?[90m# SelectFlightStepDefinitions.sheEntersTheDataOfTheChildrenPassengers(ChildPassenger>)?[0m
+    ?[32mAnd ?[0m?[32mshe enters the data of the babies passengers?[0m                                                       ?[90m# SelectFlightStepDefinitions.sheEntersTheDataOfTheBabiesPassengers(BabyPassenger>)?[0m
+    ?[32mAnd ?[0m?[32mshe enters contact information?[0m                                                                     ?[90m# SelectFlightStepDefinitions.sheEntersContactInformation(ContactInformation>)?[0m
+    ?[32mThen ?[0m?[32mshe will verify your reservation?[0m                                                                  ?[90m# SelectFlightStepDefinitions.sheWillVerifyYourReservation()?[0m
+
+  @buyFlight
+  Scenario: Buy a flight in latam              ?[90m# src/test/resources/features/buy_flight.feature:41?[0m
+    ?[32mWhen ?[0m?[32mshe selects the payment method?[0m        ?[90m# BuyFlightStepDefinitions.sheSelectsThePaymentMethod(BuyData>)?[0m
+    ?[32mThen ?[0m?[32mshe will verify your reservation code?[0m ?[90m# BuyFlightStepDefinitions.sheWillVerifyYourReservationCode()?[0m
+]]></system-out>
+  <system-err><![CDATA[dic 03, 2018 2:02:21 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a) on port 47700
+Only local connections are allowed.
+dic 03, 2018 2:02:25 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: OSS
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Buy a flight in latam
+----------------------------------------------------------------------------
+]]></system-err>
+</testsuite>

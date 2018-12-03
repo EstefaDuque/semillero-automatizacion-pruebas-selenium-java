@@ -1,0 +1,7 @@
+Páginas de referencia
+
+http://serenity-bdd.info/docs/articles/screenplay-tutorial.html
+http://serenity-bdd.info/docs/articles/screenplay-tutorial.html
+https://www.youtube.com/watch?v=l_Q7cbmYjDY
+https://github.com/cypress-io/cypress/issues/1125
+https://www.youtube.com/channel/UCO1aucBAJgFR8odzfXOZ5uw

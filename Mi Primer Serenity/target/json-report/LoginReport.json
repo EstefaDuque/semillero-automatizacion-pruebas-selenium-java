@@ -1,0 +1,88 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Login in new tours",
+        "description": "",
+        "id": "login-in-new-torus-page;login-in-new-tours",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6897123328,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The new tours page",
+            "match": {
+              "location": "LoginStepsDefinition.the_new_tours_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1360125176,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I fill the user and password field",
+            "match": {
+              "location": "LoginStepsDefinition.i_fill_the_user_and_password_field()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2551925791,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Click the submit button",
+            "match": {
+              "location": "LoginStepsDefinition.click_the_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 286787746,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I acceess to a new page",
+            "match": {
+              "location": "LoginStepsDefinition.i_acceess_to_a_new_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Login in new torus page",
+    "description": "",
+    "id": "login-in-new-torus-page",
+    "keyword": "Feature",
+    "uri": "Features/LoginSerenity.Feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

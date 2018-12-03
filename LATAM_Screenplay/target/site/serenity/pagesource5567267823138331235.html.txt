@@ -1,0 +1,752 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        
+        <title>LATAM Airlines</title>
+        
+        <link rel="shortcut icon" href="//www.latam.com/images/latam/favicon.ico" />
+        <link href="//www.latam.com/layout/ui/3/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="//www.latam.com/layout/ui/3/css/global.min.css" rel="stylesheet" />
+        <link href="//www.latam.com/layout/ui/3/css/latam-mu.min.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="//www.latam.com/css/header_footer_cms/header-latam.css" type="text/css" />
+        <link rel="stylesheet" href="//www.latam.com/css/header_footer_cms/footer-latam.css" type="text/css" />
+        <link rel="stylesheet" href="//www.latam.com/css/login_latam/screen_latam.css" type="text/css" />
+
+        <script async="" src="//ssl.lan.com/cgi-bin/setCookieGa.cgi?_ga=GA1.2.1929671323.1543820858&amp;_gaHome=undefined&amp;_gaGlobal=undefined&amp;homeInfo=es_co&amp;pcom=espanol%2Fco"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-TXPNM6Z"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-PCGJ5W8&amp;l=dataLayer"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-K6QMQH"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-RPVH"></script><script type="text/javascript" src="https://www.lan.com/es_co/js/metriplica.js"></script><script type="text/javascript" src="//www.latam.com/js/top_list.js"></script>
+        <script type="text/javascript" src="//www.latam.com/js/cookie.js"></script>
+        <script type="text/javascript" src="//www.latam.com/js/sitio_personas/menu.js"></script>
+        <script type="text/javascript" src="//www.latam.com/js/otid.js"></script>
+        <script type="text/javascript" src="//www.latam.com/js/reset_cookies.js"></script>
+        <script type="text/javascript" src="//www.latam.com/js/external/jquery/1.12.1/jquery.min.js"></script>
+        <script>
+                var $j = jQuery.noConflict();
+        </script>
+        <script type="text/javascript" src="//cdn.optimizely.com/js/150473218.js"></script>
+        <!--[if lt IE 9]>
+                <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+                <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+	<!-- Global GA -->
+	<script type="text/javascript">
+	var homeacc='UA-30106544-5';
+	var lancomacc='UA-30106544-1';
+	var mx_content='/personas/es_co/site_login';
+	var _mxq=[];
+	 
+	(function() {
+		var mx = document.createElement('script'); 
+		mx.type = 'text/javascript';
+		mx.src="https://www.lan.com/es_co/js/metriplica.js";
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(mx, s);
+	})();
+	</script>
+
+
+<!-- Corporate GTM -->
+<script type="text/javascript">
+!function(){var r=function(){var e,n,t=(e=document.cookie,null===(n=/lan_session=([\w|\d]+)%3Bempresas(.+)[\w|\d];/g.exec(e))&amp;&amp;null===(n=/lan_session=([\w|\d]+)%3Bempresas(.+)[\w|\d]$/g.exec(e))?null:n[1]);if(null===t)return null;var a=document.cookie;return null!==/portal_peru_data=(.+)/g.exec(a)?"peru":null!==/cc([\d]+)/g.exec(t)?"chile":"empresa"}();!0===window.isInitializedCorporateGtm||null===r&amp;&amp;null===/^https?:\/\/(.+)\.lan\.com\/cgi-bin\/site_login\.cgi\?page=/g.exec(window.location.href)&amp;&amp;null===/^https?:\/\/(.+)\.lan\.com\/cgi-bin\/corporate_brasil\//g.exec(window.location.href)||(window.isInitializedCorporateGtm=!0,r=null===r?"empresa":r,function(e,n,t,a,o){e[a]=e[a]||[],e[a].push({"gtm.start":(new Date).getTime(),event:"gtm.js"}),e[a].push({corporate:{portal:r}});var l=n.getElementsByTagName(t)[0],i=n.createElement(t);i.async=!0,i.src="https://www.googletagmanager.com/gtm.js?id=GTM-5GJLT9N",l.parentNode.insertBefore(i,l)}(window,document,"script","dataLayer"))}();
+</script>
+<!-- End Corporate GTM -->
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="wrapper-content">
+                <style>
+#info, #logged_1, #not_logged_1 {
+  display: none !important;
+}
+</style>
+<div role="banner">
+<div class="stickSkipBar">
+    <div class="stickyWrap">
+        <a href="#start-of-content" tabindex="1" class="accessibility-style lan-skip-to-content" rel="mx">Ir al contenido principal <img aria-hidden="true" hidden="true" src="https://www.latam.com/akamai/pcom/es_co.gif" /></a>
+    </div>
+</div>
+<div id="body-hf">
+    <div id="header-widget">
+        <div class="Header-content">
+            <!-- Desktop Primary bar-->
+            <div class="Header-stepBar--main">
+                <div class="container container-xs-height">
+                    <div class="row row-xs-height">
+                        <div class="col-md-12 col-xs-height right hidden-xs">
+                            <div class="complementary">
+                                <ul class="Header-complementaryList">
+                                    <li class="Header-complementaryItem padding right toggle">
+                                        <!-- Include country Selector Sub Component -->
+                                        <div id="header-countrySelector" class="countrySelector-new menu-access">
+                                            <a id="header-flagLink" class="countrySelector-new-flagLink nav-item" href="#" aria-expanded="false" aria-controls="header-dropDown" rel="mx">
+                                                <span class="countrySelector-new-flagText">Colombia</span>
+                                                <span class="icon-caret-down countrySelector-new-flagCaret" id="header-flagCaret"></span>
+                                            </a>
+                                            <div id="header-dropDown" class="countrySelector-new-dropDown Sub-Menu" aria-hidden="true" aria-label="submenu">
+                                                <div class="countrySelector-ContentList"><ul class="countrySelector-new-unorderedList  sub-nav-group">
+    <li class="countrySelector-new-unorderedItem countrySelector-new-unorderedItem--title">
+        Sudamérica/South America
+    </li>
+    <li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/es_ar/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-ar" role="presentation"></span><span class="countrySelector-flagText">Argentina</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/pt_br/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-br" role="presentation"></span><span class="countrySelector-flagText">Brasil</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/es_cl/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-cl" role="presentation"></span><span class="countrySelector-flagText">Chile</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/es_co/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-co" role="presentation"></span><span class="countrySelector-flagText">Colombia</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/es_ec/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-ec" role="presentation"></span><span class="countrySelector-flagText">Ecuador</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/es_py/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-pr" role="presentation"></span><span class="countrySelector-flagText">Paraguay</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/es_pe/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-pe" role="presentation"></span><span class="countrySelector-flagText">Perú</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/es_uy/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-uy" role="presentation"></span><span class="countrySelector-flagText">Uruguay</span>
+    </a>
+</li>
+</ul><ul class="countrySelector-new-unorderedList  sub-nav-group">
+    <li class="countrySelector-new-unorderedItem countrySelector-new-unorderedItem--title">
+        Norteamérica/North America
+    </li>
+    <li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/en_ca/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-ca" role="presentation"></span><span class="countrySelector-flagText">Canada</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/es_mx/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-mx" role="presentation"></span><span class="countrySelector-flagText">México</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/en_us/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-eu" role="presentation"></span><span class="countrySelector-flagText">United States (English)</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/es_us/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-eu" role="presentation"></span><span class="countrySelector-flagText">Estados Unidos (Español)</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/pt_us/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-eu" role="presentation"></span><span class="countrySelector-flagText">Estados Unidos (Português)</span>
+    </a>
+</li>
+</ul><ul class="countrySelector-new-unorderedList  sub-nav-group">
+    <li class="countrySelector-new-unorderedItem countrySelector-new-unorderedItem--title">
+        Europa/Europe
+    </li>
+    <li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/de_de/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-de" role="presentation"></span><span class="countrySelector-flagText">Deutschland</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/es_es/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-es" role="presentation"></span><span class="countrySelector-flagText">España</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/fr_fr/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-fr" role="presentation"></span><span class="countrySelector-flagText">France</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/it_it/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-it" role="presentation"></span><span class="countrySelector-flagText">Italia</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/en_uk/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-uk" role="presentation"></span><span class="countrySelector-flagText">United Kingdom</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/en_ue/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-ue" role="presentation"></span><span class="countrySelector-flagText">Rest of Europe</span>
+    </a>
+</li>
+</ul><ul class="countrySelector-new-unorderedList  sub-nav-group">
+    <li class="countrySelector-new-unorderedItem countrySelector-new-unorderedItem--title">
+        Oceanía/Oceania
+    </li>
+    <li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/en_au/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-au" role="presentation"></span><span class="countrySelector-flagText">Australia</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/en_nz/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-nz" role="presentation"></span><span class="countrySelector-flagText">New Zealand</span>
+    </a>
+</li>
+</ul><ul class="countrySelector-new-unorderedList  sub-nav-group">
+    <li class="countrySelector-new-unorderedItem countrySelector-new-unorderedItem--title">
+        Otros Países/Other countries
+    </li>
+    <li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/en_uk/latam-airlines-south-africa/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-sa" role="presentation"></span><span class="countrySelector-flagText">South Africa</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/es_un/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-otros_paises" role="presentation"></span><span class="countrySelector-flagText">Otros países</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/en_un/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-otros_paises" role="presentation"></span><span class="countrySelector-flagText">Other countries</span>
+    </a>
+</li>
+</ul></div>
+                                            </div>
+                                        </div>
+                                        <!-- End country selector sub component -->
+                                    </li>
+                                    <li class="Header-complementaryItem hidden-xs">
+	<a class="Header-complementaryLink " href="http://www.lan.com/empresas/index.html" rel="mx">
+		<span class="Header-helpLabel ">Corporate</span>
+	</a>
+</li><li class="Header-complementaryItem hidden-xs">
+	<a class="Header-complementaryLink " href="https://helpdesk.latam.com/hc/es/" rel="mx">
+		<span class="Header-helpLabel ">Centro de Ayuda</span>
+	</a>
+</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="zona-login" class="col-xs-3 col-xs-height hidden-xs"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Primary bar-->
+
+            <!-- Desktop/Mobile Secondary Bar-->
+            <div class="Header-stepBar Header-stepBar--wPadding Header-stepBar--stick">
+                <div class="container Header-container--relative">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="Header-logo">
+                                <a id="legacy-LogoLAN" href="https://www.latam.com/es_co/" class="Header-logoBlock Header-logoLink" rel="mx">
+                                    <img src="https://www.latam.com/static/latam/images/content-image/header/logo_latam_color.svg" alt="LATAM Logo" class="Header-logoImg" />
+                                </a>
+                                <a id="legacy-LogoOneWorld" href="https://www.latam.com/es_co/conocenos/oneworld/alianza-oneworld.html" class="Header-logoBlock Header-logoLink Header-logoOneWorld " rel="mx">
+    <img src="https://www.latam.com/static/latam/images/content-image/header/ow_cmy_solid.svg" alt="Ir al sitio de oneworld" class="Header-logoImg Header-logoImg--sub" />
+</a>
+                            </div>
+                        </div>
+                        <div class="col-md-9 MobileMenu">
+                                <ul class="Header-complementaryList">
+                                    
+                                    <li class="Header-complementaryItem hidden-xs">
+	<a class="Header-complementaryLink " href="http://www.lan.com/empresas/index.html" rel="mx">
+		<span class="Header-helpLabel ">Corporate</span>
+	</a>
+</li><li class="Header-complementaryItem hidden-xs">
+	<a class="Header-complementaryLink " href="https://helpdesk.latam.com/hc/es/" rel="mx">
+		<span class="Header-helpLabel ">Centro de Ayuda</span>
+	</a>
+</li>
+                                <li class="Header-complementaryItem padding right toggle">
+                                        <!-- Include country Selector Sub Component -->
+                                        <div id="header-countrySelector" class="countrySelector-new menu-access">
+                                            <a id="header-flagLink" class="countrySelector-new-flagLink nav-item" href="#" aria-expanded="false" aria-controls="header-dropDown" rel="mx">
+                                                <span class="countrySelector-new-flagText">Colombia</span>
+                                                <span class="icon-caret-down countrySelector-new-flagCaret" id="header-flagCaret"></span>
+                                            </a>
+                                            <div id="header-dropDown" class="countrySelector-new-dropDown Sub-Menu" aria-hidden="true" aria-label="submenu">
+                                                <div class="countrySelector-ContentList"><ul class="countrySelector-new-unorderedList  sub-nav-group">
+    <li class="countrySelector-new-unorderedItem countrySelector-new-unorderedItem--title">
+        Sudamérica/South America
+    </li>
+    <li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/es_ar/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-ar" role="presentation"></span><span class="countrySelector-flagText">Argentina</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/pt_br/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-br" role="presentation"></span><span class="countrySelector-flagText">Brasil</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/es_cl/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-cl" role="presentation"></span><span class="countrySelector-flagText">Chile</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/es_co/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-co" role="presentation"></span><span class="countrySelector-flagText">Colombia</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/es_ec/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-ec" role="presentation"></span><span class="countrySelector-flagText">Ecuador</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/es_py/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-pr" role="presentation"></span><span class="countrySelector-flagText">Paraguay</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/es_pe/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-pe" role="presentation"></span><span class="countrySelector-flagText">Perú</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/es_uy/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-uy" role="presentation"></span><span class="countrySelector-flagText">Uruguay</span>
+    </a>
+</li>
+</ul><ul class="countrySelector-new-unorderedList  sub-nav-group">
+    <li class="countrySelector-new-unorderedItem countrySelector-new-unorderedItem--title">
+        Norteamérica/North America
+    </li>
+    <li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/en_ca/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-ca" role="presentation"></span><span class="countrySelector-flagText">Canada</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/es_mx/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-mx" role="presentation"></span><span class="countrySelector-flagText">México</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/en_us/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-eu" role="presentation"></span><span class="countrySelector-flagText">United States (English)</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/es_us/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-eu" role="presentation"></span><span class="countrySelector-flagText">Estados Unidos (Español)</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/pt_us/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-eu" role="presentation"></span><span class="countrySelector-flagText">Estados Unidos (Português)</span>
+    </a>
+</li>
+</ul><ul class="countrySelector-new-unorderedList  sub-nav-group">
+    <li class="countrySelector-new-unorderedItem countrySelector-new-unorderedItem--title">
+        Europa/Europe
+    </li>
+    <li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/de_de/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-de" role="presentation"></span><span class="countrySelector-flagText">Deutschland</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/es_es/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-es" role="presentation"></span><span class="countrySelector-flagText">España</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/fr_fr/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-fr" role="presentation"></span><span class="countrySelector-flagText">France</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/it_it/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-it" role="presentation"></span><span class="countrySelector-flagText">Italia</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/en_uk/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-uk" role="presentation"></span><span class="countrySelector-flagText">United Kingdom</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/en_ue/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-ue" role="presentation"></span><span class="countrySelector-flagText">Rest of Europe</span>
+    </a>
+</li>
+</ul><ul class="countrySelector-new-unorderedList  sub-nav-group">
+    <li class="countrySelector-new-unorderedItem countrySelector-new-unorderedItem--title">
+        Oceanía/Oceania
+    </li>
+    <li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/en_au/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-au" role="presentation"></span><span class="countrySelector-flagText">Australia</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/en_nz/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-nz" role="presentation"></span><span class="countrySelector-flagText">New Zealand</span>
+    </a>
+</li>
+</ul><ul class="countrySelector-new-unorderedList  sub-nav-group">
+    <li class="countrySelector-new-unorderedItem countrySelector-new-unorderedItem--title">OtrosPaíses/Othercountries</li>
+    <li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/en_uk/latam-airlines-south-africa/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-sa" role="presentation"></span><span class="countrySelector-flagText">South Africa</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/es_un/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-otros_paises" role="presentation"></span><span class="countrySelector-flagText">Otros países</span>
+    </a>
+</li><li class="countrySelector-new-unorderedItem">
+    <a class="countrySelector-new-unorderedLink subnav-item" href="https://www.latam.com/en_un/" role="button" rel="mx">
+        <span class="countrySelector-flagIcon lt-icon-otros_paises" role="presentation"></span><span class="countrySelector-flagText">Other countries</span>
+    </a>
+</li>
+</ul></div>
+                                            </div>
+                                        </div>
+                                        <!-- End country selector sub component -->
+                                    </li></ul>
+                            </div>
+                        <div class="clearfix"></div>
+                    </div><div class="mobile-menu"><button type="button"><span class="icon-int-more-vertical icon-medium"></span></button></div><div class="mobile-menu-mask"></div>
+                </div>
+            </div>
+            <!-- End second bar-->
+        </div>
+    </div>
+</div>
+</div>
+
+
+<script type="text/javascript">
+    (function(){
+        if (!Array.prototype.indexOf) {
+            Array.prototype.indexOf = function(elm, from) {
+                var len = this.length;
+                for (var i = (from &lt; 0) ? Math.max(0, len + from) : from || 0; i &lt; len; i++) {
+                    if (this[i] === elm) {
+                        return i;
+                    }
+                }
+                return -1;
+            };
+        }
+
+        function toggleClass(className, element) {
+            if (element.classList) {
+                return element.classList.toggle(className);
+            }
+            var classes = element.className.split(' ');
+            var index = classes.indexOf(className);
+            if (index != -1) {
+                classes.splice(index, 1);
+            } else {
+                classes.push(className);
+            }
+            element.className = classes.join(' ');
+        }
+
+        document.getElementById('header-flagLink').onclick = function() {
+            var flagCaret = document.getElementById('header-flagCaret');
+            toggleClass("icon-caret-down", flagCaret);
+            toggleClass("icon-caret-up", flagCaret);
+            toggleClass("isOpen",document.getElementById('header-countrySelector'));
+            toggleClass("isOpen",document.getElementById('header-dropDown'));
+            return false;
+        };
+
+    })();
+
+</script>
+<script type="text/javascript" src="https://www.lan.com/es_co/js/skip_content.js"></script>
+                <!--MENU TOP-->
+<div class="navLan" role="navigation">
+	<ul class="menu">
+    	<li id="destinos"><a href="/es_co/cotiza-y-compra/" rel="mx">Cotiza y compra</a></li>
+        <li id="planifica_tu_vuelo"><a href="/es_co/check-in-y-otros-servicios/" rel="mx"><span lang="EN">Check-in</span> y <br />otros servicios</a></li>
+        <li id="promociones"><a href="https://www.lan.com/es_co/sitio_personas/promociones/index.html" rel="mx">Destinos y ofertas</a></li>
+        <li id="bot_menu_04"><a href="/es_co/informacion-para-tu-viaje/" rel="mx">Información <br />para tu viaje</a></li>
+        <li id="lanpass"><a href="/es_co/lanpass/" rel="mx">Pasajero <br /> frecuente</a></li>
+        <li id="volar_en_lan" class="longItem"><a href="/empresas/" rel="mx">Corporate</a></li>
+    </ul>
+</div>
+                <!-- INFO LOGIN -->
+<div id="accesos_top">
+	<div id="logged_1" style="display: none;">
+<div id="accesos_top_right"> <span id="span_bienvenida"></span> <a href="/cgi-bin/logout.cgi?page=http://www.lan.com/sitio_personas/index.html" title="Cerrar sesión" rel="mx"> <img style="vertical-align: middle; margin-left: 8px; border: 0;" src="https://www.lan.com/es_co/images/common/cerrar_lightbox.png" height="15" width="16" alt="Cerrar sesión" /></a>
+  <script type="text/javascript">
+
+ 
+
+function ucwords(str) {
+
+   // split string on spaces
+
+   arrStr = str.split(" ");
+
+ 
+
+   var strOut = "";
+
+ 
+
+   for (i=0;i&lt;arrStr.length;i++)
+
+   {
+
+       // split string
+
+       firstChar = arrStr[i].substring(0,1);
+
+       remainChar = arrStr[i].substring(1);
+
+ 
+
+       // convert case
+
+       firstChar = firstChar.toUpperCase();
+
+       remainChar = remainChar.toLowerCase();
+
+ 
+
+       strOut += firstChar + remainChar + ' ';
+
+   }
+
+ 
+
+   // return string, but drop the last space
+
+   return strOut.substring(0, strOut.length - 1);
+
+}
+
+ 
+
+ 
+
+// Cargo el panel cliente solo si hay sesion
+
+var lan_session = document.cookie.match(new RegExp('(^|;)\\s*' + escape('lan_session') + '=([^;\\s]*)'));
+
+if (lan_session &amp;&amp; document.getElementById('accesos_top_right'))
+
+        {
+
+        var user_data = Cookie.get('user_data');
+
+        if (user_data)
+			{
+			data = /^(.*)-(.)-(.*)$/.exec(user_data);
+
+			var bienvenida = '';
+			var kms = '';
+			
+			if (data)
+				{
+				if (data[2] == 'M')
+					{
+					bienvenida = "Bienvenido";
+					}
+				else if (data[2] == 'F')
+					{
+					bienvenida = "Bienvenida";
+					}
+				else
+					{
+					bienvenida = "Bienvenido";
+					}
+
+				if (data[3] != '')
+					{
+					kms = ' ' + "tienes" + ' ' + data[3] + " Millas";
+					}
+				
+				if (data[3] &gt; 0) {
+					bienvenida = bienvenida + ' ' + ucwords(data[1]) + kms;
+				}
+				else {
+					bienvenida = bienvenida + ' ' + ucwords(data[1]);
+				}
+				
+				$j('#span_bienvenida').wrapInner(bienvenida);
+				$j('#accesos_top_right').show();
+				}
+			}
+        }
+
+</script>
+</div>
+</div>
+<div id="not_logged_1" style="display: block;">
+
+</div>
+
+
+<script type="text/javascript">
+var lan_session = document.cookie.match(new RegExp('(^|;)\\s*' + escape('lan_session') + '=([^;\\s]*)'));
+</script>
+
+
+<script type="text/javascript">
+if (lan_session)
+	{
+	$j('#logged_1').show();
+	$j('#not_logged_1').hide();
+	}
+else
+	{
+	$j('#logged_1').hide();
+	$j('#not_logged_1').show();
+	}
+</script>
+</div>
+<!-- CUERPO -->
+	<div id="cuerpo">
+		<script src="//www.latam.com/js/login_personas.js" type="text/javascript" charset="utf-8"></script>
+<link href="//www.latam.com/css/login_latam/login.css" rel="stylesheet" />
+<link href="//www.latam.com/css/login_latam/migrationModal.css" rel="stylesheet" />
+<section class="container">
+    <div id="mainContent">
+        <div class="main-region login">
+            <div class="fullContainer">
+                <div class="page-heading login-heading">
+                    <h1>Ingresa a tu cuenta</h1>
+                    <p class="lead">Para acceder a este servicio debes registrarte con tu usuario y contraseña.</p>
+                </div>
+                
+                <div class="alert alert-stop hidden" id="divAlertBlockLogin" role="alert">
+                    <span class="icon-block-negative icon-medium"></span>
+                    <p>Los datos que ingresaste no coinciden con nuestros registros, por favor vuelve a intentarlo. Si necesitas ayuda utiliza el <a title="Ir a recuperación de usuario" href="http://www.lan.com/cgi-bin/profile/forgot_login.cgi" rel="mx">sistema de recuperación de usuario</a> o <a title="Ir a recuperación de contraseña" href="https://ssl.lan.com/cgi-bin/password_recovery/step1.cgi" rel="mx">solicita una nueva contraseña</a>.</p>
+                </div>
+                <div class="alert alert-error" id="divAlertErrorLogin" role="alert">
+                    <span class="icon-close-negative icon-medium"></span>
+                    <p>Los datos que ingresaste no coinciden con nuestros registros, por favor vuelve a intentarlo. Si necesitas ayuda utiliza el <a title="Ir a recuperación de usuario" href="http://www.lan.com/cgi-bin/profile/forgot_login.cgi" rel="mx">sistema de recuperación de usuario</a> o <a title="Ir a recuperación de contraseña" href="https://ssl.lan.com/cgi-bin/password_recovery/step1.cgi" rel="mx">solicita una nueva contraseña</a>.</p>
+                </div>
+                <div class="alert alert-success hidden" role="alert">
+                    <span class="icon-ticket-negative icon-medium"></span>
+                    <h4>Ya eres un socio LATAM Pass</h4>
+                    <p>Ingresa tu usuario y clave, y podrás disfrutar de todos los beneficios de pertenecer a nuestro programa de viajero frecuente.</p>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 col-md-offset-3 col-lg-6 col-lg-6">
+                        <div class="box-white row">
+                            <div class="col-xs-12 col-md-10 col-sm-10 col-sm-offset-1">
+                                <form class="form" action="/cgi-bin/login/login_latam.cgi" method="post" name="login_form" id="login_form">
+                                    <input type="hidden" name="cm_target_action" value="https%3A%2F%2Fwww.latam.com%2Fes_co%2F" />
+                                    <div class="form-group login">
+                                        <label for="login" aria-hidden="true">Usuario o Número de socio</label>
+                                        <input name="login" type="text" id="login" class="form-control" aria-required="true" aria-invalid="true" aria-describedby="pLogin-error-block" aria-label="Escribe tu nombre de usuario o número de socio." />
+                                        <p class="error-block text-left" id="pLogin-error-block">Debes ingresar un usuario válido.</p>
+                                    </div>
+                                    <div class="form-group password">
+                                        <label for="password" aria-hidden="true">Contraseña</label>
+                                        <input name="password" type="password" id="password" class="form-control" aria-required="true" aria-invalid="true" aria-describedby="pPassword-error-block" aria-label="Escribe tu contraseña." />
+                                        <p class="error-block text-left" id="pPassword-error-block">Debes ingresar tu contraseña.</p>
+                                    </div>
+                                    <div class="row" id="dLogin-recaptcha">
+                                        <div class="col-xs-12" id="dRecaptcha">
+                                            
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <p class="error-block hidden text-left" id="pRecaptcha-error-block"></p>
+                                        </div>
+                                    </div>
+                                                                        <input name="extraParam" id="extraParam" type="hidden" value="2B86E648-F6CA-11E8-BE1E-3B0BA8941660" />
+                                    <button id="btnEnter" name="enter" type="submit" class="btn-flat flat-large first-level btn-block">
+                                        <span>Ingresar</span>
+                                    </button>
+                                    <p class="help-links-block">
+                                        <span class="icon-regular-int039 icon-large" aria-hidden="true"></span>
+                                        <span>¿Olvidaste tu <a href="https://www.lan.com/cgi-bin/profile/forgot_login.cgi" rel="mx">usuario</a> o <a href="https://ssl.lan.com/cgi-bin/password_recovery/step1.cgi" rel="mx">contraseña</a>?</span>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<script type="text/javascript">
+    var LAN = {};
+    LAN.Environment = {
+        error_code: '001',
+	require_captcha: '0',
+        error_msgs: {
+            user_empty      : 'Debes ingresar un usuario v&amp;aacute;lido.',
+            password_empty  : 'Debes ingresar tu contrase&amp;ntilde;a.',
+            recaptcha_empty : 'Debes validar este elemento para ingresar.'
+        }
+    };
+    var dataLayer = dataLayer || [];
+    dataLayer.push({"app":"Login", "page":"LoginPage", "event":"display"});
+    dataLayer.push({"app":"Login", "page":"LoginPage", "event":"pageview"});
+</script>
+	</div>
+<!-- CUERPO -->
+                <script src="//www.latam.com/js/latam/latam.js"></script> <!-- Add this to IF -->
+                <script src="//www.latam.com/layout/ui/3/js/bootstrap.min.js"></script>
+                <script> var dataLayer = dataLayer || [];  </script><script> dataLayer.push({"data-global": {"website":"tam","aplicacion":"compra_normal","paso":"sin_paso","session-id":"sin_sid","codigo-recomendacion":"sin_cr","idioma":"ES","pais":"CO","mensaje-operacional":"no","home":"es_co","fecha-venta":"","portal":"personas","flowid":"sin dato","tipo-paso-2":"sin dato"}, "event":"pageview"}); </script><script>var id_ga = 'GTM-RPVH'; document.cookie = "analyticsData=; domain=.lan.com; expires=Thu, 31 Dec 2022 12:00:00 UTC; path=/"; </script>
+<!-- Google Tag Manager -->
+<noscript>&lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-RPVH"
+height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+<script type="text/javascript" src="https://www.lan.com/es_co/js/google_tag_manager.js"></script>
+<!-- End Google Tag Manager -->
+            </div>
+        </div><iframe src="https://a150473218.cdn.optimizely.com/client_storage/a150473218.html" hidden="" aria-hidden="true" tabindex="-1" height="0" width="0" style="display: none;"></iframe>
+        <div id="footer-latam" role="contentinfo">
+    <div class="footer-process">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-xs-height right hidden-xs">
+                    <div class="footer-processCopy">
+                        <p class="footer-paragraph--copy">
+                            © 2018 LATAM Airlines Colombia
+                        </p>
+                        <p class="footer-paragraph--copy "></p>
+                        <p class="footer-paragraph--copy footer-paragraph-line">Sitio certificado por </p>
+                    </div>
+                </div>
+                <div class="col-xs-3 right col-xs-height hidden-xs">
+                    <img src="" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://www.lan.com/es_co/js/countrySelectorLegacy.js" type="text/javascript"></script>
+<script src="https://www.lan.com/es_co/js/refinedMenuAccessLegacy.js" type="text/javascript"></script>
+        
+    
+<script type="text/javascript" id="">var seteado_ok=false;var temp_pcom="";if("espanol%2Fco"!="undefined"&amp;&amp;"espanol%2Fco"!="")pcom_formated=formatHome("espanol%2Fco");else pcom_formated="es_co";
+if(("es_co"=="undefined"||"es_co"=="")&amp;&amp;"undefined".match(/[a-z]{2}_[a-z]{2}/)!=null)seteado_ok=true;else if(("es_co"=="undefined"||"es_co"=="")&amp;&amp;"es_co"!="undefined"&amp;&amp;"es_co"!="")seteado_ok=false;else if("es_co"!="undefined"&amp;&amp;"es_co"!=""&amp;&amp;"es_co"!="es_co"&amp;&amp;pcom_formated=="es_co"){seteado_ok=true;document.cookie=
+"mx_homeinfo\x3des_co;domain\x3d.latam.com;path\x3d/;"}else if(typeof homeacc!="undefined"&amp;&amp;homeacc.match(/UA-30106544/)!=null&amp;&amp;(document.domain.match("lan.com")!=null||document.domain.match("latam.com")!=null)){var valor_home="";if(homeacc.match(/UA-30106544-8$/)!=null)valor_home="es_uy";else if(homeacc.match(/UA-30106544-2$/)!=null)valor_home="es_ar";else if(homeacc.match(/UA-30106544-18$/)!=null)valor_home="en_au";else if(homeacc.match(/UA-30106544-3$/)!=null)valor_home=
+"pt_br";else if(homeacc.match(/UA-30106544-4$/)!=null)valor_home="es_cl";else if(homeacc.match(/UA-30106544-5$/)!=null)valor_home="es_co";else if(homeacc.match(/UA-30106544-6$/)!=null)valor_home="es_ec";else if(homeacc.match(/UA-30106544-7$/)!=null)valor_home="es_pe";else if(homeacc.match(/UA-30106544-9$/)!=null)valor_home="en_ca";else if(homeacc.match(/UA-30106544-10$/)!=null)valor_home="es_mx";else if(homeacc.match(/UA-30106544-11$/)!=null)valor_home="en_us";else if(homeacc.match(/UA-30106544-12$/)!=
+null)valor_home="es_us";else if(homeacc.match(/UA-30106544-13$/)!=null)valor_home="de_de";else if(homeacc.match(/UA-30106544-14$/)!=null)valor_home="es_es";else if(homeacc.match(/UA-30106544-15$/)!=null)valor_home="fr_fr";else if(homeacc.match(/UA-30106544-16$/)!=null)valor_home="en_uk";else if(homeacc.match(/UA-30106544-17$/)!=null)valor_home="en_ue";else if(homeacc.match(/UA-30106544-18$/)!=null)valor_home="en_au";else if(homeacc.match(/UA-30106544-19$/)!=null)valor_home="en_nz";else if(homeacc.match(/UA-30106544-20$/)!=
+null)valor_home="es_un";else if(homeacc.match(/UA-30106544-21$/)!=null)valor_home="en_un";else if(homeacc.match(/UA-30106544-58$/)!=null)valor_home="it_it";else if(homeacc.match(/UA-30106544-59$/)!=null)valor_home="pt_us";else if(homeacc.match(/UA-30106544-56$/)!=null)valor_home="es_co";else if(homeacc.match(/UA-30106544-22$/)!=null)valor_home="es_ar";else if(homeacc.match(/UA-30106544-23$/)!=null)valor_home="es_cl";else if(homeacc.match(/UA-30106544-24$/)!=null)valor_home="es_ec";else if(homeacc.match(/UA-30106544-26$/)!=
+null)valor_home="en_us";else if(homeacc.match(/UA-30106544-25$/)!=null)valor_home="es_pe";if(valor_home!=""&amp;&amp;location.href.match(/site_login.cgi/)==null)document.cookie="mx_homeinfo\x3d"+valor_home+";domain\x3d.latam.com;path\x3d/;"}if(seteado_ok==false&amp;&amp;"espanol%2Fco"!="undefined"&amp;&amp;"espanol%2Fco"!=""){var new_pcom=formatHome("espanol%2Fco");if(new_pcom!=false)document.cookie="mx_homeinfo\x3d"+new_pcom+";domain\x3d.latam.com;path\x3d/;"}
+if("undefined".match(/[a-z]{2}_[a-z]{2}/)!=null){document.cookie="mx_homeinfo\x3dundefined;domain\x3d.latam.com;path\x3d/;";document.cookie="homeInfo\x3dundefined;domain\x3d.latam.com;path\x3d/;"}
+function formatHome(valor_pcom){var valor_pcom=decodeURI(valor_pcom);var p=valor_pcom.split("/");if(valor_pcom.match("%2F")!=null)p=valor_pcom.split("%2F");if(p[0]!=""&amp;&amp;p[1]!=""){var l="";if(p[0].toLowerCase()=="espanol")l="es";else if(p[0].toLowerCase()=="english")l="en";else if(p[0].toLowerCase()=="deutsch")l="de";else if(p[0].toLowerCase()=="fr")l="fr";else if(p[0].toLowerCase()=="it")l="it";else if(p[0].toLowerCase()=="pt")l="pt";if(l!=""&amp;&amp;p[1]!="")return l+"_"+p[1];else return false}else return false}
+;</script><script type="text/javascript" id="">window.mxTracker=window.mxTracker||function(){};window.mxTracker._trackPromo=function(a){document.cookie="__mxsv1\x3d"+unescape(a)+";path\x3d/;domain\x3d.latam.com;"};window.mxTracker._trackVirtual=function(){};window.mxTracker._setCustomVar=function(){};</script><script type="text/javascript" id="">dataLayer.push({"gtm.pos":"true"});window.dataLayerPOS=[];</script>
+
+<noscript>&lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-K6QMQH" height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+<script type="text/javascript" id="">(function(b,c,d,a,e){b[a]=b[a]||[];b[a].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});b=c.getElementsByTagName(d)[0];c=c.createElement(d);a="dataLayerPOS"!=a?"\x26l\x3d"+a:"";c.async=!0;c.src="//www.googletagmanager.com/gtm.js?id\x3d"+e+a;b.parentNode.insertBefore(c,b)})(window,document,"script","dataLayerPOS","GTM-K6QMQH");</script>
+
+
+
+<script type="text/javascript" id="">var now=new Date;
+if(null!=location.pathname.match("/cgi-bin/compra/paso5.cgi"))document.cookie="TimePaso5\x3d"+now.getTime()+";domain\x3d.latam.com;path\x3d/;expires\x3d0",window.desde_paso_5=!1;else if(null!=location.pathname.match("/cgi-bin/compra/(paso6|confirmacion).cgi"))try{var CookieTimePaso5=parseInt("undefined");if(isNaN(CookieTimePaso5))document.cookie="TimePaso5\x3d;domain\x3d.latam.com;path\x3d/;expires\x3dThu, 01 Jan 1970 00:00:01 GMT;",window.desde_paso_5=!1;else{var segundos=
+parseInt(now.getTime()-CookieTimePaso5)/1E3;43200&gt;segundos?window.desde_paso_5=!0:(window.desde_paso_5=!1,document.cookie="TimePaso5\x3d;domain\x3d.latam.com;path\x3d/;expires\x3dThu, 01 Jan 1970 00:00:01 GMT;")}}catch(a){}else document.cookie="TimePaso5\x3d;domain\x3d.latam.com;path\x3d/;expires\x3dThu, 01 Jan 1970 00:00:01 GMT;",window.desde_paso_5=!1;</script><script type="text/javascript" id="">var now=new Date;
+if(null!=location.pathname.match("/cgi-bin/pago_reserva/paso3.cgi"))document.cookie="TimePaso3\x3d"+now.getTime()+";domain\x3d.latam.com;path\x3d/;expires\x3d0",window.desde_paso_3=!1;else if(null!=location.pathname.match("/cgi-bin/pago_reserva/paso4.cgi"))try{var CookieTimePaso3=parseInt("undefined");if(isNaN(CookieTimePaso3))document.cookie="TimePaso3\x3d;domain\x3d.latam.com;path\x3d/;expires\x3dThu, 01 Jan 1970 00:00:01 GMT;",window.desde_paso_3=!1;else{var segundos=
+parseInt(now.getTime()-CookieTimePaso3)/1E3;43200&gt;segundos?window.desde_paso_3=!0:(window.desde_paso_3=!1,document.cookie="TimePaso3\x3d;domain\x3d.latam.com;path\x3d/;expires\x3dThu, 01 Jan 1970 00:00:01 GMT;")}}catch(a){document.cookie="TimePaso3\x3d;domain\x3d.latam.com;path\x3d/;expires\x3dThu, 01 Jan 1970 00:00:01 GMT;",window.desde_paso_3=!1}else document.cookie="TimePaso3\x3d;domain\x3d.latam.com;path\x3d/;expires\x3dThu, 01 Jan 1970 00:00:01 GMT;",window.desde_paso_3=
+!1;</script><script type="text/javascript" id="">var encripta=function(c){var h=function(a,b){var c=a&lt;&lt;b|a&gt;&gt;&gt;32-b;return c},n=function(a){var b="",c;for(c=7;0&lt;=c;c--){var d=a&gt;&gt;&gt;4*c&amp;15;b+=d.toString(16)}return b},a,g=Array(80),p=1732584193,q=4023233417,r=2562383102,t=271733878,u=3285377520;c=unescape(encodeURIComponent(c));var b=c.length;var m=[];for(a=0;a&lt;b-3;a+=4){var d=c.charCodeAt(a)&lt;&lt;24|c.charCodeAt(a+1)&lt;&lt;16|c.charCodeAt(a+2)&lt;&lt;8|c.charCodeAt(a+3);m.push(d)}switch(b%4){case 0:a=2147483648;break;case 1:a=c.charCodeAt(b-1)&lt;&lt;24|8388608;break;case 2:a=
+c.charCodeAt(b-2)&lt;&lt;24|c.charCodeAt(b-1)&lt;&lt;16|32768;break;case 3:a=c.charCodeAt(b-3)&lt;&lt;24|c.charCodeAt(b-2)&lt;&lt;16|c.charCodeAt(b-1)&lt;&lt;8|128}for(m.push(a);14!==m.length%16;)m.push(0);m.push(b&gt;&gt;&gt;29);m.push(b&lt;&lt;3&amp;4294967295);for(c=0;c&lt;m.length;c+=16){for(a=0;16&gt;a;a++)g[a]=m[c+a];for(a=16;79&gt;=a;a++)g[a]=h(g[a-3]^g[a-8]^g[a-14]^g[a-16],1);d=p;b=q;var e=r;var f=t;var k=u;for(a=0;19&gt;=a;a++){var l=h(d,5)+(b&amp;e|~b&amp;f)+k+g[a]+1518500249&amp;4294967295;k=f;f=e;e=h(b,30);b=d;d=l}for(a=20;39&gt;=a;a++)l=h(d,5)+(b^e^f)+k+g[a]+
+1859775393&amp;4294967295,k=f,f=e,e=h(b,30),b=d,d=l;for(a=40;59&gt;=a;a++)l=h(d,5)+(b&amp;e|b&amp;f|e&amp;f)+k+g[a]+2400959708&amp;4294967295,k=f,f=e,e=h(b,30),b=d,d=l;for(a=60;79&gt;=a;a++)l=h(d,5)+(b^e^f)+k+g[a]+3395469782&amp;4294967295,k=f,f=e,e=h(b,30),b=d,d=l;p=p+d&amp;4294967295;q=q+b&amp;4294967295;r=r+e&amp;4294967295;t=t+f&amp;4294967295;u=u+k&amp;4294967295}l=n(p)+n(q)+n(r)+n(t)+n(u);return l.toLowerCase()};</script>
+<noscript>&lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-PCGJ5W8" height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+<script type="text/javascript" id="">(function(b,c,d,a,e){b[a]=b[a]||[];b[a].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});b=c.getElementsByTagName(d)[0];c=c.createElement(d);a="dataLayerProd"!=a?"\x26l\x3d"+a:"";c.async=!0;c.src="//www.googletagmanager.com/gtm.js?id\x3d"+e+a;b.parentNode.insertBefore(c,b)})(window,document,"script","dataLayer","GTM-PCGJ5W8");</script>
+<iframe height="0" width="0" style="display: none; visibility: hidden;" src="//6075706.fls.doubleclick.net/activityi;src=6075706;type=siteq0;cat=co_la0;ord=7040954085907;gtm=2wgbc0;auiddc=369632622.1543820859;~oref=https%3A%2F%2Fwww.latam.com%2Fcgi-bin%2Fsite_login.cgi%3Fpage%3Dhttps%253A%252F%252Fwww.latam.com%252Fes_co%252F%26site%3Dpersonas%26error_login%3DMENSAJE_ERROR_LOGIN%26code%3D001%26flowId%3Ddb10cdbf-2bb7-481c-9f9a-ad7b7822916e?"></iframe><script type="text/javascript" id="">"undefined"!=typeof jQuery&amp;&amp;jQuery(".countrySelector a").click(function(){var a=jQuery(this).attr("class").match(/[a-z]+-[a-z]+$/);a="es_co - "+a[0].replace(/-/g,"_");ga("latamTracker.send","event","Country Selector","Click",jQuery(this).text(),{dimension23:a,metric10:1});document.cookie="country-selector\x3d"+a+";domain\x3dlan.com;path\x3d/;"});</script><script type="text/javascript" id="">window.dataLayer.push({gtm_survey:"true"});window.dataLayerSURVEY=[];var survey_index=0;for(i in window.dataLayer){var a=!0;for(j in window.dataLayer[i])a=a&amp;&amp;("string"!=typeof window.dataLayer[i][j]||null==window.dataLayer[i][j].match("gtm.|gtm_"))&amp;&amp;"function"!=typeof window.dataLayer[i];a&amp;&amp;"push"!=i&amp;&amp;(window.dataLayerSURVEY.push(window.dataLayer[i]),survey_index=i)};</script>
+
+
+<script type="text/javascript" id="">(function(b,c,d,a,e){b[a]=b[a]||[];b[a].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});b=c.getElementsByTagName(d)[0];c=c.createElement(d);a="dataLayerSURVEY"!=a?"\x26l\x3d"+a:"";c.async=!0;c.src="https://www.googletagmanager.com/gtm.js?id\x3d"+e+a;b.parentNode.insertBefore(c,b)})(window,document,"script","dataLayerSURVEY","GTM-TXPNM6Z");</script>
+
+
+<noscript>&lt;iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXPNM6Z" height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+
+
+
+<script type="text/javascript" id="">(function(){var h=location.href;jQuery("#signin a").click(function(){dataLayer=dataLayer||[];dataLayer.push({"event":"evento-interactivo","evento-interactivo-categoria":"Caja LANPASS","evento-interactivo-accion":"Clics Login","evento-interactivo-etiqueta":jQuery(this).text().replace(/(^[ \n\r\t]+|[ \n\r\t]+$|[\r\n\t]+)/g,"")});document.cookie="mx_caja_login_try\x3dtrue;domain\x3dlan.com;path\x3d/;"});jQuery(".lanPassPanel button[type\x3dsubmit]").click(function(){dataLayer=dataLayer||[];dataLayer.push({"event":"evento-interactivo",
+"evento-interactivo-categoria":"Caja LANPASS","evento-interactivo-accion":"Clics Login","evento-interactivo-etiqueta":jQuery(this).text().replace(/(^[ \n\r\t]+|[ \n\r\t]+$|[\r\n\t]+)/g,"")});document.cookie="mx_caja_login_try\x3dtrue;domain\x3dlan.com;path\x3d/;"});jQuery("form#login_form input[type\x3dsubmit]").click(function(){dataLayer=dataLayer||[];dataLayer.push({"event":"evento-interactivo","evento-interactivo-categoria":"Pagina Acceso","evento-interactivo-accion":"Clics Login","evento-interactivo-etiqueta":jQuery(this).val().replace(/(^[ \n\r\t]+|[ \n\r\t]+$|[\r\n\t]+)/g,
+"")});document.cookie="mx_pagina_login_try\x3dtrue;domain\x3dlan.com;path\x3d/;"});jQuery("form[name\x3dlogin_reserva] input[type\x3dsubmit]").click(function(){dataLayer=dataLayer||[];dataLayer.push({"event":"evento-interactivo","evento-interactivo-categoria":"Login Compra","evento-interactivo-accion":"Clics Login","evento-interactivo-etiqueta":jQuery(this).val().replace(/(^[ \n\r\t]+|[ \n\r\t]+$|[\r\n\t]+)/g,"")});document.cookie="mx_compra_login_try\x3dtrue;domain\x3dlan.com;path\x3d/;"});jQuery(".loginBox.userMenu a").click(function(){dataLayer=
+dataLayer||[];dataLayer.push({"event":"evento-interactivo","evento-interactivo-categoria":"Caja LANPASS","evento-interactivo-accion":"Clics Men\u00fa","evento-interactivo-etiqueta":jQuery(this).text().replace(/(^[ \n\r\t]+|[ \n\r\t]+$|[\r\n\t]+)/g,"")})});if("undefined"=="true"||"undefined"=="true"||"undefined"=="true"){var categoria_evento="";if("undefined"=="true")categoria_evento="Login Compra";else if("undefined"=="true")categoria_evento=
+"Pagina Acceso";else categoria_evento="Caja LANPASS";if(jQuery(".userLogged").length&gt;0||jQuery("#info #login img.logoutLogo").length&gt;0){dataLayer.push({"event":"evento-interactivo","evento-interactivo-categoria":categoria_evento,"evento-interactivo-accion":"Clics Login","evento-interactivo-etiqueta":"Login exitoso"});document.cookie="mx_caja_login_try\x3d;domain\x3dlan.com;path\x3d/;";document.cookie="mx_compra_login_try\x3d;domain\x3dlan.com;path\x3d/;";document.cookie="mx_pagina_login_try\x3d;domain\x3dlan.com;path\x3d/;"}if(h.match("MSG_LOGIN_INCORRECTO")!=
+null){dataLayer.push({"event":"evento-interactivo","evento-interactivo-categoria":categoria_evento,"evento-interactivo-accion":"Clics Login","evento-interactivo-etiqueta":"Login error"});document.cookie="mx_caja_login_try\x3d;domain\x3dlan.com;path\x3d/;";document.cookie="mx_compra_login_try\x3d;domain\x3dlan.com;path\x3d/;";document.cookie="mx_pagina_login_try\x3d;domain\x3dlan.com;path\x3d/;"}}})();</script><script type="text/javascript" id="">"undefined"!==jQuery(".amax-module-body")&amp;&amp;"undefined"!=typeof mxTracker&amp;&amp;jQuery(".amax-module-body").click(function(){var a=jQuery(this).find(".open");a=a.attr("href");a.match(/s_cid=([^&amp;]+)/)});</script><script type="text/javascript" id="">try{if(mxTracker.mx_got&amp;&amp;google_tag_manager["GTM-RPVH"].macro(135)!=false&amp;&amp;"undefined"!="undefined"&amp;&amp;google_tag_manager["GTM-RPVH"].macro(136)!=false)mxTracker._trackEvent("S_CID","undefined","Conversiones")}catch(e){};</script><script type="text/javascript" id="">mx_wait_to_go=function(b,a){"function"==typeof a.preventDefault?a.preventDefault():a.returnValue=!1;eval('setTimeout(function(){window.location.href\x3d"'+b+'";},500)')};</script><script type="text/javascript" id="">jQuery("#navigationBar a").click(function(){dataLayer=dataLayer||[];dataLayer.push({event:"evento-interactivo","evento-interactivo-categoria":"Compra Barra Navegaci\u00f3n","evento-interactivo-accion":"Clic pagina "+jQuery("#navigationBar .active").text(),"evento-interactivo-etiqueta":jQuery(this).text()})});</script><script type="text/javascript" id="">window.mxTracker=window.mxTracker||function(){};window.mxTracker._trackPromo=function(a){document.cookie="__mxsv1\x3d"+unescape(a)+";path\x3d/;domain\x3d.latam.com;"};window.mxTracker._trackVirtual=function(){};window.mxTracker._setCustomVar=function(){};</script><script type="text/javascript" id="">function a(c,d){var b=c.createElement(d),e=c.getElementsByTagName(d)[0];b.async=1;b.src=google_tag_manager["GTM-RPVH"].macro(250);e.parentNode.insertBefore(b,e)}a(document,"script");</script></body></html>

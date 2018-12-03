@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Select a flight in latam" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-12-03T07:09:43" hostname="RC-PC" time="142.173">
+  <properties/>
+  <testcase name="Select a random flight in latam" classname="Select a flight in latam" time="142.173"/>
+  <system-out><![CDATA[    ?[32mGiven ?[0m?[32mthat alice wanted to login?[0m                                     ?[90m# LoginStepDefinitions.thatAliceWantedToLogin()?[0m
+    ?[32mWhen ?[0m?[32mshe enters to her account with her information?[0m                  ?[90m# LoginStepDefinitions.sheEntersToHerAccountWithHerInformation(LoginModel>)?[0m
+    ?[32mThen ?[0m?[32mshe will verify that she entered correctly?[0m                      ?[90m# LoginStepDefinitions.sheWillVerifyThatSheEnteredCorrectly()?[0m
+    ?[32mWhen ?[0m?[32malice enters the search criteria?[0m                                ?[90m# SearchFlightStepDefinitions.aliceEntersTheSearchCriteria(SearchDataFlight>)?[0m
+    ?[32mThen ?[0m?[32mshe will verify that she found at least one flight?[0m              ?[90m# SearchFlightStepDefinitions.sheWillVerifyThatSheFoundAtLeastOneFlight()?[0m
+
+  @selectFlight
+  Scenario: Select a random flight in latam            ?[90m# src/test/resources/features/select_flight.feature:23?[0m
+    ?[32mGiven ?[0m?[32mshe wanted to select a flight randomly?[0m       ?[90m# SelectFlightStepDefinitions.she_wanted_to_select_a_flight_randomly()?[0m
+    ?[32mWhen ?[0m?[32mshe enters the data of the adult passengers?[0m   ?[90m# SelectFlightStepDefinitions.sheEntersTheDataOfTheAdultPassengers(AdultPassenger>)?[0m
+    ?[32mAnd ?[0m?[32mshe enters the data of the children passengers?[0m ?[90m# SelectFlightStepDefinitions.sheEntersTheDataOfTheChildrenPassengers(ChildPassenger>)?[0m
+    ?[32mAnd ?[0m?[32mshe enters the data of the babies passengers?[0m   ?[90m# SelectFlightStepDefinitions.sheEntersTheDataOfTheBabiesPassengers(BabyPassenger>)?[0m
+    ?[32mAnd ?[0m?[32mshe enters contact information?[0m                 ?[90m# SelectFlightStepDefinitions.sheEntersContactInformation(ContactInformation>)?[0m
+    ?[32mThen ?[0m?[32mshe will verify your reservation?[0m              ?[90m# SelectFlightStepDefinitions.sheWillVerifyYourReservation()?[0m
+]]></system-out>
+  <system-err><![CDATA[dic 03, 2018 2:09:43 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+dic 03, 2018 2:09:44 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: OSS
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Select a random flight in latam
+----------------------------------------------------------------------------
+]]></system-err>
+</testsuite>

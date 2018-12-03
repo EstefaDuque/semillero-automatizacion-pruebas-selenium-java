@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="3" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="204.707174">
+<testcase classname="Login in LATAM" name="Successful Login in Latam" time="43.755581">
+<system-out><![CDATA[Given that alice wanted to login............................................passed
+When she enters to her account with her information.........................passed
+Then she will verify that she entered correctly.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login in LATAM" name="UnSuccessful Login in Latam" time="54.964339">
+<failure message="java.lang.AssertionError: Wrong credentials login - Expected net.serenitybdd.screenplay.QuestionSubject@469ad37&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;&#13;&#10;&#9;at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)&#13;&#10;&#9;at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)&#13;&#10;&#9;at net.serenitybdd.screenplay.Actor.should(Actor.java:187)&#13;&#10;&#9;at com.latam.certification.stepdefinitions.LoginStepDefinitions.sheWillVerifyThatSheEnteredCorrectly(LoginStepDefinitions.java:84)&#13;&#10;&#9;at ✽.she will verify that she entered correctly(src/test/resources/features/login.feature:25)&#13;&#10;"><![CDATA[Given that alice wanted to login............................................passed
+When she enters to her account with her information.........................passed
+Then she will verify that she entered correctly.............................failed
+
+StackTrace:
+java.lang.AssertionError: Wrong credentials login - Expected net.serenitybdd.screenplay.QuestionSubject@469ad37
+Expected: is <true>
+     but: was <false>
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:187)
+	at com.latam.certification.stepdefinitions.LoginStepDefinitions.sheWillVerifyThatSheEnteredCorrectly(LoginStepDefinitions.java:84)
+	at ✽.she will verify that she entered correctly(src/test/resources/features/login.feature:25)
+]]></failure>
+</testcase>
+<testcase classname="Login in LATAM" name="UnSuccessful Login in Latam 2" time="53.624735">
+<failure message="java.lang.AssertionError: Wrong credentials login - Expected net.serenitybdd.screenplay.QuestionSubject@2303ff0e&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;&#13;&#10;&#9;at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)&#13;&#10;&#9;at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)&#13;&#10;&#9;at net.serenitybdd.screenplay.Actor.should(Actor.java:187)&#13;&#10;&#9;at com.latam.certification.stepdefinitions.LoginStepDefinitions.sheWillVerifyThatSheEnteredCorrectly(LoginStepDefinitions.java:84)&#13;&#10;&#9;at ✽.she will verify that she entered correctly(src/test/resources/features/login.feature:34)&#13;&#10;"><![CDATA[Given that alice wanted to login............................................passed
+When she enters to her account with her information.........................passed
+Then she will verify that she entered correctly.............................failed
+
+StackTrace:
+java.lang.AssertionError: Wrong credentials login - Expected net.serenitybdd.screenplay.QuestionSubject@2303ff0e
+Expected: is <true>
+     but: was <false>
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:187)
+	at com.latam.certification.stepdefinitions.LoginStepDefinitions.sheWillVerifyThatSheEnteredCorrectly(LoginStepDefinitions.java:84)
+	at ✽.she will verify that she entered correctly(src/test/resources/features/login.feature:34)
+]]></failure>
+</testcase>
+<testcase classname="Login in LATAM" name="UnSuccessful Login in Latam 3" time="52.362519">
+<failure message="java.lang.AssertionError: Wrong credentials login - Expected net.serenitybdd.screenplay.QuestionSubject@77fe5087&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;&#13;&#10;&#9;at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)&#13;&#10;&#9;at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)&#13;&#10;&#9;at net.serenitybdd.screenplay.Actor.should(Actor.java:187)&#13;&#10;&#9;at com.latam.certification.stepdefinitions.LoginStepDefinitions.sheWillVerifyThatSheEnteredCorrectly(LoginStepDefinitions.java:84)&#13;&#10;&#9;at ✽.she will verify that she entered correctly(src/test/resources/features/login.feature:43)&#13;&#10;"><![CDATA[Given that alice wanted to login............................................passed
+When she enters to her account with her information.........................passed
+Then she will verify that she entered correctly.............................failed
+
+StackTrace:
+java.lang.AssertionError: Wrong credentials login - Expected net.serenitybdd.screenplay.QuestionSubject@77fe5087
+Expected: is <true>
+     but: was <false>
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:187)
+	at com.latam.certification.stepdefinitions.LoginStepDefinitions.sheWillVerifyThatSheEnteredCorrectly(LoginStepDefinitions.java:84)
+	at ✽.she will verify that she entered correctly(src/test/resources/features/login.feature:43)
+]]></failure>
+</testcase>
+</testsuite>
