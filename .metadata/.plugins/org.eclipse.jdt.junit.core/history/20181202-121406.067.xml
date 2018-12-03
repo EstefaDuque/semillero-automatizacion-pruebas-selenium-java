@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="SearchFlightRunner" project="LATAM_Screenplay" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.latam.certification.runners.SearchFlightRunner" time="73.218">
-    <testsuite name="Feature: To look for a flight in LATAM" time="73.218">
-      <testcase name="To look for flights in Latam" classname="To look for a flight in LATAM" time="73.218"/>
-    </testsuite>
-  </testsuite>
-</testrun>

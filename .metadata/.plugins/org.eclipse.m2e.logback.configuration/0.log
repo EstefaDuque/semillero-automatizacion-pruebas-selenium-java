@@ -2086,3 +2086,5 @@ org.eclipse.core.runtime.CoreException: Launch configuration ChooseAMovieRunner 
 	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267) [org.eclipse.core.resources_3.12.0.v20170417-1558.jar:na]
 	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:86) [org.eclipse.ltk.ui.refactoring_3.9.0.v20170412-0825.jar:na]
 	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119) [org.eclipse.jface_3.13.2.v20171022-1656.jar:na]
+2018-12-03 03:06:11,347 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-12-03 07:36:15,995 [Worker-4] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

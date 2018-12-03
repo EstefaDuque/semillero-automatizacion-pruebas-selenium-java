@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="BuyFlightRunner" project="LATAM_Screenplay" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.latam.certification.runners.BuyFlightRunner" time="128.315">
-    <testsuite name="Feature: Buy a flight in latam" time="128.315">
-      <testcase name="Buy a flight in latam" classname="Buy a flight in latam" time="128.315"/>
-    </testsuite>
-  </testsuite>
-</testrun>

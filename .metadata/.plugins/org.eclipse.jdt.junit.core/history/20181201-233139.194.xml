@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="RunnerTags" project="proyecto.screenplay" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="proyecto.screenplay.runners.RunnerTags" time="28.313">
-    <testsuite name="Característica: Ingresar a la pagina Mercury Tours" time="28.313">
-      <testcase name="Reservar vuelo" classname="Ingresar a la pagina Mercury Tours" time="28.313"/>
-    </testsuite>
-  </testsuite>
-</testrun>
