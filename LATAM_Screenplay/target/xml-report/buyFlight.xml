@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="151.061144">
-<testcase classname="Buy a flight in latam" name="Buy a flight in latam" time="151.061144">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="135.178402">
+<testcase classname="Buy a flight in latam" name="Buy a flight in latam" time="135.178402">
 <system-out><![CDATA[Given that alice wanted to login............................................passed
 When she enters to her account with her information.........................passed
 Then she will verify that she entered correctly.............................passed
